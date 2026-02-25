@@ -1,0 +1,5732 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=HBS 2026-27 Household Budget Survey
+Name=HBS2026_DICT
+RecordTypeStart=1
+RecordTypeLen=2
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=4BDDD7C4CC727FC4B93B3B10F892AEF6D9B277D9FC4F0FF17199B3F48C79B2FA
+
+[Level]
+Label=HBS 2026 Level
+Name=HBS2026_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Province
+Name=PROVINCE
+Start=3
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Province
+Name=PROVINCE_VS1
+Value=0;Bulawayo
+Value=1;Manicaland
+Value=2;Mashonaland Central
+Value=3;Mashonaland East
+Value=4;Mashonaland West
+Value=5;Matabeleland North
+Value=6;Matabeleland South
+Value=7;Midlands
+Value=8;Masvingo
+Value=9;Harare
+
+[Item]
+Label=District
+Name=DISTRICT
+Start=4
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Ward
+Name=WARD
+Start=7
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Sector
+Name=SECTOR
+Start=9
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Enumeration Area
+Name=EA
+Start=11
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Natural Region
+Name=NATURAL_REGION
+Start=14
+Len=1
+DataType=Numeric
+
+[Item]
+Label=Geocode
+Name=GEOCODE
+Start=15
+Len=10
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Area Type
+Name=AREA_TYPE
+Start=25
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Area Type
+Name=AREA_TYPE_VS1
+Value=1;Urban
+Value=2;Rural
+
+[Item]
+Label=Structure ID
+Name=STRUCTURE_ID
+Start=26
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Household Number
+Name=HOUSEHOLD_NUMBER
+Start=30
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Module 0
+Name=M00
+RecordTypeValue='34'
+RecordLen=244
+
+[Item]
+Label=HHID
+Name=HHID
+Start=34
+Len=15
+DataType=Alpha
+
+[Item]
+Label=Household Head Name
+Name=HH_HEAD_NAME
+Start=49
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Household Head Phone
+Name=HH_HEAD_PHONE
+Start=99
+Len=15
+DataType=Alpha
+
+[Item]
+Label=Household Address
+Name=HH_ADDRESS
+Start=114
+Len=100
+DataType=Alpha
+
+[Item]
+Label=GPS Coordinates
+Name=GPS_COORDINATES
+Start=214
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Main or Replacement HH
+Name=MAIN_REPLACEMENT
+Start=244
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Main or Replacement
+Name=MAIN_REPLACEMENT_VS1
+Value=1;Main
+Value=2;Replacement
+
+[Record]
+Label=Module 1 - Start of Interview
+Name=M01
+RecordTypeValue='01'
+RecordLen=303
+
+[Item]
+Label=M01_Q01 Supervisor Name and Code
+Name=M01_Q01
+Start=34
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M01_Q02 Interviewer Name and Code
+Name=M01_Q02
+Start=84
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M01_Q03 Household Identified and Located
+Name=M01_Q03
+Start=134
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Household Located
+Name=M01_Q03_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M01_Q04 Household Moved from Original Location
+Name=M01_Q04
+Start=135
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Household Moved
+Name=M01_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M01_Q05 Eligible Respondent Available
+Name=M01_Q05
+Start=136
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Respondent Available
+Name=M01_Q05_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M01_Q06 Can Start Interview Now
+Name=M01_Q06
+Start=137
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Can Start Now
+Name=M01_Q06_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M01_Q07 HH Head Name Correct
+Name=M01_Q07
+Start=138
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Name Correct
+Name=M01_Q07_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M01_Q08 Correct HH Head Name
+Name=M01_Q08
+Start=139
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M01_Q09 Current Location Description
+Name=M01_Q09
+Start=189
+Len=100
+DataType=Alpha
+
+[Item]
+Label=M01_Q10 GPS Coordinates Taken
+Name=M01_Q10
+Start=289
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=GPS Taken
+Name=M01_Q10_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M01_Q11 Interview Start Date
+Name=M01_Q11
+Start=290
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M01_Q12 Interview Start Time
+Name=M01_Q12
+Start=298
+Len=6
+DataType=Numeric
+
+[Record]
+Label=Module 2 - Household Characteristics
+Name=M02
+RecordTypeValue='02'
+MaxRecords=20
+RecordLen=243
+
+[Item]
+Label=Member ID
+Name=MEMBER_ID
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M02_Q01 Member Name
+Name=M02_Q01
+Start=36
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M02_Q02 Stayed Here Last Night
+Name=M02_Q02
+Start=86
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Stayed Last Night
+Name=M02_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M02_Q03 Days Ate Meals in HH (Last 7 Days)
+Name=M02_Q03
+Start=87
+Len=1
+DataType=Numeric
+
+[Item]
+Label=M02_Q04 Days Present in Last Month
+Name=M02_Q04
+Start=88
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M02_Q05 Months in HH (Last 12 Months)
+Name=M02_Q05
+Start=90
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M02_Q06 Relationship to HH Head
+Name=M02_Q06
+Start=92
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Relationship to Head
+Name=M02_Q06_VS1
+Value=1;Head
+Value=2;Spouse/Partner
+Value=3;Son/Daughter
+Value=4;Son/Daughter-in-law
+Value=5;Grandchild
+Value=6;Parent
+Value=7;Parent-in-law
+Value=8;Brother/Sister
+Value=9;Brother/Sister-in-law
+Value=10;Uncle/Aunt
+Value=11;Niece/Nephew
+Value=12;Other Relative
+Value=13;Adopted/Foster/Stepchild
+Value=14;Domestic Worker
+Value=96;Other (Not Related)
+
+[Item]
+Label=M02_Q07 Sex
+Name=M02_Q07
+Start=94
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sex
+Name=M02_Q07_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=M02_Q08 Birth Year
+Name=M02_Q08_YEAR
+Start=95
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M02_Q08 Birth Month
+Name=M02_Q08_MONTH
+Start=99
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=M02_Q08 Birth Day
+Name=M02_Q08_DAY
+Start=101
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=M02_Q09 Age at Last Birthday
+Name=M02_Q09
+Start=103
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M02_Q10 Birth Registered in Zimbabwe
+Name=M02_Q10
+Start=105
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Birth Registered
+Name=M02_Q10_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't Know
+
+[Item]
+Label=M02_Q11 Has Zimbabwean National ID
+Name=M02_Q11
+Start=106
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Has National ID
+Name=M02_Q11_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't Know
+
+[Item]
+Label=M02_Q12 Marital Status
+Name=M02_Q12
+Start=107
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Marital Status
+Name=M02_Q12_VS1
+Value=1;Never Married
+Value=2;Married - Civil
+Value=3;Married - Customary Registered
+Value=4;Married - Customary Unregistered
+Value=5;Cohabiting
+Value=6;Divorced/Separated
+Value=7;Widowed
+
+[Item]
+Label=M02_Q13 Nationality
+Name=M02_Q13
+Start=108
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M02_Q14 Ethnic Origin
+Name=M02_Q14
+Start=111
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Ethnic Origin
+Name=M02_Q14_VS1
+Value=1;Shona
+Value=2;Ndebele
+Value=3;English
+Value=4;Chewa
+Value=5;Chibarwe
+Value=6;Kalanga
+Value=7;Koisan
+Value=8;Nambya
+Value=9;Ndau
+Value=10;Shangani
+Value=11;Sotho
+Value=12;Tonga
+Value=13;Tswana
+Value=14;Venda
+Value=15;Xhosa
+Value=16;Sign Language
+Value=96;Other
+
+[Item]
+Label=M02_Q15 Mother's Place of Residence at Birth
+Name=M02_Q15
+Start=113
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M02_Q16 Usual Residence in 2018
+Name=M02_Q16
+Start=116
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M02_Q17 Biological Mother Alive
+Name=M02_Q17
+Start=119
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Mother Alive
+Name=M02_Q17_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't Know
+
+[Item]
+Label=M02_Q18 Mother Lives in This HH
+Name=M02_Q18
+Start=120
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Mother in HH
+Name=M02_Q18_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M02_Q19 Mother's Member ID
+Name=M02_Q19
+Start=121
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M02_Q20 Mother's Education Level
+Name=M02_Q20
+Start=123
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Education Level
+Name=M02_Q20_VS1
+Value=1;None
+Value=2;ECD
+Value=3;Primary
+Value=4;Lower Secondary
+Value=5;Upper Secondary
+Value=6;Vocational
+Value=7;Diploma
+Value=8;Bachelor Degree
+Value=9;Postgraduate
+Value=98;Don't Know
+
+[Item]
+Label=M02_Q21 Mother's Occupation Description
+Name=M02_Q21_DESC
+Start=125
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M02_Q21 Mother's Occupation ISCO Code
+Name=M02_Q21_ISCO
+Start=175
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M02_Q22 Biological Father Alive
+Name=M02_Q22
+Start=179
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Father Alive
+Name=M02_Q22_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't Know
+
+[Item]
+Label=M02_Q23 Father Lives in This HH
+Name=M02_Q23
+Start=180
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Father in HH
+Name=M02_Q23_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M02_Q24 Father's Member ID
+Name=M02_Q24
+Start=181
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M02_Q25 Father's Education Level
+Name=M02_Q25
+Start=183
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Father Education
+Name=M02_Q25_VS1
+Value=1;None
+Value=2;ECD
+Value=3;Primary
+Value=4;Lower Secondary
+Value=5;Upper Secondary
+Value=6;Vocational
+Value=7;Diploma
+Value=8;Bachelor Degree
+Value=9;Postgraduate
+Value=98;Don't Know
+
+[Item]
+Label=M02_Q26 Father's Occupation Description
+Name=M02_Q26_DESC
+Start=185
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M02_Q26 Father's Occupation ISCO Code
+Name=M02_Q26_ISCO
+Start=235
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M02_Q27 Has Albinism
+Name=M02_Q27
+Start=239
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Has Albinism
+Name=M02_Q27_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M02_Q28 Main Source of Income (Last 12 Months)
+Name=M02_Q28
+Start=240
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Income Source
+Name=M02_Q28_VS1
+Value=1;Employment
+Value=2;Self-employment
+Value=3;Agriculture
+Value=4;Remittances
+Value=5;Social Grants
+Value=6;Pensions
+Value=7;Other Income
+Value=8;No Income
+Value=98;Don't Know
+
+[Item]
+Label=M02_Q29 Hours on Recreation per Week
+Name=M02_Q29
+Start=242
+Len=2
+DataType=Numeric
+
+[Record]
+Label=Module 3 - International Migration
+Name=M03
+RecordTypeValue='03'
+RecordLen=88
+
+[Item]
+Label=M03_Q01 Any HH Member Lived Outside Zimbabwe
+Name=M03_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Lived Outside Zimbabwe
+Name=M03_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M03_Q02 Member ID Who Lived Outside
+Name=M03_Q02
+Start=35
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M03_Q03 Country Lived In
+Name=M03_Q03
+Start=37
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M03_Q04 Year Left Zimbabwe
+Name=M03_Q04
+Start=40
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M03_Q05 Year Returned to Zimbabwe
+Name=M03_Q05
+Start=44
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M03_Q06 Main Reason for Migration
+Name=M03_Q06
+Start=48
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Migration Reason
+Name=M03_Q06_VS1
+Value=1;Work/Employment
+Value=2;Education
+Value=3;Family Reasons
+Value=4;Conflict/Insecurity
+Value=5;Economic Reasons
+Value=6;Health Reasons
+Value=96;Other
+
+[Item]
+Label=M03_Q07 Sent Money to HH While Away
+Name=M03_Q07
+Start=50
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sent Money
+Name=M03_Q07_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M03_Q08 Amount Sent (Last 12 Months)
+Name=M03_Q08
+Start=51
+Len=10
+DataType=Numeric
+
+[Item]
+Label=M03_Q09 Frequency of Money Transfers
+Name=M03_Q09
+Start=61
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Transfer Frequency
+Name=M03_Q09_VS1
+Value=1;Weekly
+Value=2;Monthly
+Value=3;Quarterly
+Value=4;Annually
+Value=5;Irregular
+
+[Item]
+Label=M03_Q10 Any HH Member Currently Outside Zimbabwe
+Name=M03_Q10
+Start=62
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Currently Outside
+Name=M03_Q10_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M03_Q11 Member ID Currently Outside
+Name=M03_Q11
+Start=63
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M03_Q12 Country Currently In
+Name=M03_Q12
+Start=65
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M03_Q13 Year Left for Current Migration
+Name=M03_Q13
+Start=68
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M03_Q14 Sends Money to HH
+Name=M03_Q14
+Start=72
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sends Money
+Name=M03_Q14_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M03_Q15 Amount Sent (Last 12 Months)
+Name=M03_Q15
+Start=73
+Len=10
+DataType=Numeric
+
+[Item]
+Label=M03_Q16 Frequency of Current Transfers
+Name=M03_Q16
+Start=83
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Current Transfer Frequency
+Name=M03_Q16_VS1
+Value=1;Weekly
+Value=2;Monthly
+Value=3;Quarterly
+Value=4;Annually
+Value=5;Irregular
+
+[Item]
+Label=M03_Q17 Plans to Return
+Name=M03_Q17
+Start=84
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Plans to Return
+Name=M03_Q17_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't Know
+
+[Item]
+Label=M03_Q18 Expected Year of Return
+Name=M03_Q18
+Start=85
+Len=4
+DataType=Numeric
+
+[Record]
+Label=Module 4 - Housing
+Name=M04
+RecordTypeValue='04'
+RecordLen=110
+
+[Item]
+Label=M04_Q01 Type of Dwelling
+Name=M04_Q01
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Dwelling Type
+Name=M04_Q01_VS1
+Value=1;Traditional
+Value=2;Mixed
+Value=3;Detached House
+Value=4;Semi-detached House
+Value=5;Flat/Townhouse
+Value=6;Shack
+Value=7;Mobile Home
+Value=8;Cluster House
+Value=98;Other
+
+[Item]
+Label=M04_Q02 Tenure of Dwelling
+Name=M04_Q02
+Start=36
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Dwelling Tenure
+Name=M04_Q02_VS1
+Value=1;Owned
+Value=2;Rented
+Value=3;Lodger
+Value=4;Tied Accommodation Free
+Value=5;Tied Accommodation Rent
+Value=6;Relatives House
+Value=7;Occupied Rent Free
+Value=98;Other
+
+[Item]
+Label=M04_Q03 Number of Rooms
+Name=M04_Q03
+Start=38
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M04_Q04 Number of Sleeping Rooms
+Name=M04_Q04
+Start=40
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M04_Q05 Main Type of Roof
+Name=M04_Q05
+Start=42
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Roof Type
+Name=M04_Q05_VS1
+Value=1;Thatch
+Value=2;Wood/Wood Planks
+Value=3;Cardboard
+Value=4;Metal
+Value=5;Asbestos
+Value=6;Tiles
+Value=7;Cement/Concrete
+Value=8;Roofing Shingles
+Value=97;No Roof
+Value=98;Other
+
+[Item]
+Label=M04_Q06 Main Type of Walls
+Name=M04_Q06
+Start=44
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Wall Type
+Name=M04_Q06_VS1
+Value=1;Burnt Farm Bricks
+Value=2;Burnt Bricks Other
+Value=3;Dirt/Mud (Pole and Dagga)
+Value=4;Cement Blocks/Bricks
+Value=5;Unburnt Bricks
+Value=6;Plywood
+Value=7;Cardboard/Carton
+Value=8;Reused Wood
+Value=9;Cement/Plastering
+Value=10;Stone with Lime/Cement
+Value=11;Cane/Trunks
+Value=12;Iron Sheets
+Value=13;Wood Planks/Shingles
+Value=14;Stone with Mud
+Value=97;No Walls
+Value=98;Other
+
+[Item]
+Label=M04_Q07 Main Type of Floor
+Name=M04_Q07
+Start=46
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Floor Type
+Name=M04_Q07_VS1
+Value=1;Earth/Sand
+Value=2;Dung
+Value=3;Wood Planks
+Value=4;Parquet or Polished Wood
+Value=5;Vinyl or Asphalt Strips
+Value=6;Tiles
+Value=7;Cement
+Value=8;Carpet
+Value=98;Other
+
+[Item]
+Label=M04_Q08 Main Energy for Cooking
+Name=M04_Q08
+Start=48
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Cooking Fuel
+Name=M04_Q08_VS1
+Value=1;Wood
+Value=2;Paraffin
+Value=3;Electricity
+Value=4;Biogas
+Value=5;LPG (Gas)
+Value=6;Coal
+Value=7;Charcoal
+Value=8;Animal Dung
+Value=9;Alcohol/Ethanol (Gel)
+Value=97;None
+Value=98;Other
+
+[Item]
+Label=M04_Q09 Main Source of Electricity
+Name=M04_Q09
+Start=50
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Electricity Source
+Name=M04_Q09_VS1
+Value=1;National Grid
+Value=2;Local Mini Grid
+Value=3;Generator
+Value=4;Solar Home System
+Value=5;Solar Lantern/Lighting System
+Value=6;Rechargeable Battery
+Value=7;Biogas
+Value=8;Wind
+Value=97;No Electricity
+Value=98;Other
+
+[Item]
+Label=M04_Q10 Main Source of Lighting
+Name=M04_Q10
+Start=52
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Lighting Source
+Name=M04_Q10_VS1
+Value=1;Electricity
+Value=2;Solar Lanterns/Lights
+Value=3;Battery Powered Flashlight
+Value=4;Paraffin Lamp
+Value=5;Candles
+Value=6;Firewood
+Value=7;Grass/Straw
+Value=8;LP Gas Lamp
+Value=9;Biogas Lamp
+Value=10;Rechargeable Flashlight
+Value=11;Cell Phone Flashlight
+Value=12;Oil Lamp
+Value=13;No Lighting
+Value=98;Other
+
+[Item]
+Label=M04_Q11 Main Source of Drinking Water
+Name=M04_Q11
+Start=54
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Water Source
+Name=M04_Q11_VS1
+Value=1;Piped into Dwelling
+Value=2;Piped to Yard/Plot
+Value=3;Protected Well (Own Yard)
+Value=4;Piped to Neighbour
+Value=5;Public Tap/Stand Pipe
+Value=6;Tube Well/Borehole
+Value=7;Protected Well on Premises
+Value=8;Unprotected Well
+Value=9;Protected Spring
+Value=10;Unprotected Spring
+Value=11;Surface Water
+Value=12;Tanker Truck
+Value=13;Cart with Small Tank
+Value=14;Bottled Water
+Value=15;Sachet Water
+Value=16;Protected Well Elsewhere
+Value=98;Other
+
+[Item]
+Label=M04_Q12 Time to Water Source (Round Trip)
+Name=M04_Q12
+Start=56
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Time to Water
+Name=M04_Q12_VS1
+Value=1;Up to 30 minutes
+Value=2;30 minutes to less than 1 hour
+Value=3;1 hour and above
+
+[Item]
+Label=M04_Q13 Has Toilet Facility
+Name=M04_Q13
+Start=57
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Has Toilet
+Name=M04_Q13_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M04_Q14 Type of Toilet Facility
+Name=M04_Q14
+Start=58
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Toilet Type
+Name=M04_Q14_VS1
+Value=1;Flush to Piped Sewer
+Value=2;Flush to Septic Tank
+Value=3;Flush to Pit Latrine
+Value=4;Flush Don't Know Where
+Value=5;Ventilated Improved Pit
+Value=6;Pit Latrine with Slab
+Value=7;Pit Latrine without Slab
+Value=8;Composting Toilet
+Value=9;Bucket Toilet
+Value=10;Environmental Sanitation
+Value=11;UBVIP
+Value=97;Uses Bush/Field
+Value=98;Other
+
+[Item]
+Label=M04_Q15 Share Toilet with Neighbours
+Name=M04_Q15
+Start=60
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Share Toilet
+Name=M04_Q15_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M04_Q16 Where Wash Hands
+Name=M04_Q16
+Start=61
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Hand Washing Place
+Name=M04_Q16_VS1
+Value=1;Fixed Facility in Dwelling
+Value=2;Fixed Facility in Yard
+Value=3;Dish/Bucket/Jug/Kettle
+Value=97;No Handwashing Place
+Value=98;Other
+
+[Item]
+Label=M04_Q17 Solid Waste Disposal Method
+Name=M04_Q17
+Start=63
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Waste Disposal
+Name=M04_Q17_VS1
+Value=1;Collected by Municipality
+Value=2;Collected by Informal Service
+Value=3;Designated Waste Area
+Value=4;Within Household Yard
+Value=5;Disposed Elsewhere
+Value=6;Buried
+Value=7;Burnt in Open
+Value=8;Burnt in Pit
+Value=9;Recycling
+Value=98;Other
+
+[Item]
+Label=M04_Q18 Water Treatment Method
+Name=M04_Q18
+Start=65
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Water Treatment
+Name=M04_Q18_VS1
+Value=1;Boiling
+Value=2;Water Purification Tablets
+Value=3;Chlorine/Bleach
+Value=4;Strain through Cloth
+Value=5;Water Filter
+Value=6;Solar Disinfection
+Value=7;Let it Stand and Settle
+Value=97;No Treatment
+Value=98;Other
+
+[Item]
+Label=M04_Q19 Distance to Nearest Health Facility
+Name=M04_Q19
+Start=67
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M04_Q20 Distance to Nearest Primary School
+Name=M04_Q20
+Start=70
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M04_Q21 Distance to Nearest Secondary School
+Name=M04_Q21
+Start=73
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M04_Q22 Distance to Nearest Market
+Name=M04_Q22
+Start=76
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M04_Q23 Distance to Nearest Bank
+Name=M04_Q23
+Start=79
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M04_Q24 Distance to Nearest Post Office
+Name=M04_Q24
+Start=82
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M04_Q25 Distance to Nearest Police Station
+Name=M04_Q25
+Start=85
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M04_Q26 Main Mode of Transport
+Name=M04_Q26
+Start=88
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Transport Mode
+Name=M04_Q26_VS1
+Value=1;Walking
+Value=2;Bicycle
+Value=3;Motorcycle
+Value=4;Car/Truck
+Value=5;Public Transport
+Value=6;Animal Cart
+Value=98;Other
+
+[Item]
+Label=M04_Q27 Household Connected to Electricity Grid
+Name=M04_Q27
+Start=90
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Connected to Grid
+Name=M04_Q27_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M04_Q28 Hours of Electricity per Day
+Name=M04_Q28
+Start=91
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M04_Q29 Mobile Phone Network Coverage
+Name=M04_Q29
+Start=93
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Mobile Coverage
+Name=M04_Q29_VS1
+Value=1;Very Good
+Value=2;Good
+Value=3;Fair
+Value=4;Poor
+Value=5;No Coverage
+
+[Item]
+Label=M04_Q30 Internet Access at Home
+Name=M04_Q30
+Start=94
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Internet Access
+Name=M04_Q30_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M04_Q31 Type of Internet Connection
+Name=M04_Q31
+Start=95
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Internet Type
+Name=M04_Q31_VS1
+Value=1;Fixed Broadband
+Value=2;Mobile Data
+Value=3;Satellite
+Value=4;Dial-up
+Value=98;Other
+
+[Item]
+Label=M04_Q32 Household Security Measures
+Name=M04_Q32
+Start=97
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=Security Measures
+Name=M04_Q32_VS1
+Value='A    ';Burglar Bars
+Value='B    ';Security Gate
+Value='C    ';Alarm System
+Value='D    ';Security Guard
+Value='E    ';Fence/Wall
+Value='F    ';Dog
+Value='G    ';None
+
+[Item]
+Label=M04_Q33 Experienced Crime in Last 12 Months
+Name=M04_Q33
+Start=102
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Crime Experience
+Name=M04_Q33_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M04_Q34 Type of Crime Experienced
+Name=M04_Q34
+Start=103
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=Crime Type
+Name=M04_Q34_VS1
+Value='A    ';Burglary
+Value='B    ';Theft
+Value='C    ';Assault
+Value='D    ';Robbery
+Value='E    ';Vandalism
+Value='F    ';Other
+
+[Item]
+Label=M04_Q35 Reported Crime to Police
+Name=M04_Q35
+Start=108
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Reported Crime
+Name=M04_Q35_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M04_Q36 Reason for Not Reporting
+Name=M04_Q36
+Start=109
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Not Reporting Reason
+Name=M04_Q36_VS1
+Value=1;Police Ineffective
+Value=2;Too Minor
+Value=3;Handled Privately
+Value=4;Fear of Reprisal
+Value=5;No Evidence
+Value=6;Police Too Far
+Value=98;Other
+
+[Record]
+Label=Module 5 - Housing Costs Main Dwelling
+Name=M05
+RecordTypeValue='05'
+RecordLen=143
+
+[Item]
+Label=M05_Q01 Pay Rent for Main Dwelling
+Name=M05_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Pay Rent
+Name=M05_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M05_Q02 Monthly Rent Amount
+Name=M05_Q02
+Start=35
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M05_Q03 Rent Includes Utilities
+Name=M05_Q03
+Start=43
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=Rent Includes
+Name=M05_Q03_VS1
+Value='A    ';Water
+Value='B    ';Electricity
+Value='C    ';Gas
+Value='D    ';Refuse Collection
+Value='E    ';None
+
+[Item]
+Label=M05_Q04 Monthly Water Bill
+Name=M05_Q04
+Start=48
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q05 Monthly Electricity Bill
+Name=M05_Q05
+Start=54
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q06 Monthly Gas Bill
+Name=M05_Q06
+Start=60
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q07 Monthly Refuse Collection
+Name=M05_Q07
+Start=66
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q08 Property Taxes (Annual)
+Name=M05_Q08
+Start=72
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M05_Q09 Home Insurance (Annual)
+Name=M05_Q09
+Start=80
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M05_Q10 Maintenance and Repairs (Annual)
+Name=M05_Q10
+Start=88
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M05_Q11 Security Services (Monthly)
+Name=M05_Q11
+Start=96
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q12 Domestic Worker (Monthly)
+Name=M05_Q12
+Start=102
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q13 Garden Services (Monthly)
+Name=M05_Q13
+Start=108
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q14 Internet/Cable TV (Monthly)
+Name=M05_Q14
+Start=114
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M05_Q15 Estimated Rental Value if Owned
+Name=M05_Q15
+Start=120
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M05_Q16 Mortgage Payment (Monthly)
+Name=M05_Q16
+Start=128
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M05_Q17 Other Housing Costs
+Name=M05_Q17
+Start=136
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 6 - Housing Costs Second Dwelling Owned
+Name=M06
+RecordTypeValue='06'
+RecordLen=104
+
+[Item]
+Label=M06_Q01 Own Second Dwelling
+Name=M06_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Own Second Dwelling
+Name=M06_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M06_Q02 Location of Second Dwelling
+Name=M06_Q02
+Start=35
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M06_Q03 Type of Second Dwelling
+Name=M06_Q03
+Start=85
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Second Dwelling Type
+Name=M06_Q03_VS1
+Value=1;Traditional
+Value=2;Mixed
+Value=3;Detached House
+Value=4;Semi-detached House
+Value=5;Flat/Townhouse
+Value=6;Shack
+Value=98;Other
+
+[Item]
+Label=M06_Q04 Use of Second Dwelling
+Name=M06_Q04
+Start=87
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Second Dwelling Use
+Name=M06_Q04_VS1
+Value=1;Rented Out
+Value=2;Family Use
+Value=3;Business Use
+Value=4;Vacant
+Value=98;Other
+
+[Item]
+Label=M06_Q05 Monthly Rental Income
+Name=M06_Q05
+Start=89
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M06_Q06 Annual Costs for Second Dwelling
+Name=M06_Q06
+Start=97
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 7 - Housing Costs Second Dwelling Rented
+Name=M07
+RecordTypeValue='07'
+RecordLen=41
+
+[Item]
+Label=M07_Q01 Rent Second Dwelling
+Name=M07_Q01
+Start=34
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 8 - Durable Goods
+Name=M08
+RecordTypeValue='08'
+MaxRecords=50
+RecordLen=60
+
+[Item]
+Label=Asset ID
+Name=ASSET_ID
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Asset Type
+Name=ASSET_ID_VS1
+Value=1;Motor Vehicle
+Value=2;Motorcycle
+Value=3;Bicycle
+Value=4;Television
+Value=5;Radio
+Value=6;Cell Phone
+Value=7;Refrigerator
+Value=8;Deep Freezer
+Value=9;Gas Stove
+Value=10;Electric Stove
+Value=11;Fan
+Value=12;Generator
+Value=13;Solar Panel
+Value=14;Inverter
+Value=15;Lounge Suite
+Value=16;Bedroom Suite
+Value=17;Dining Room Suite
+Value=18;Wall Clock
+Value=19;DVD Player
+Value=20;Home Theater
+Value=21;Satellite Dish
+Value=22;Sewing Machine
+Value=23;Water Tank
+Value=24;Computer/Laptop
+Value=25;Fixed Line Phone
+Value=26;Washing Machine
+Value=27;Microwave
+Value=28;Air Conditioner
+
+[Item]
+Label=M08_Q01 Own This Asset
+Name=M08_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Own Asset
+Name=M08_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M08_Q02 Number Owned
+Name=M08_Q02
+Start=37
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M08_Q03 Asset in Working Condition
+Name=M08_Q03
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Working Condition
+Name=M08_Q03_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M08_Q04 Year Acquired
+Name=M08_Q04
+Start=40
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M08_Q05 How Acquired
+Name=M08_Q05
+Start=44
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=How Acquired
+Name=M08_Q05_VS1
+Value=1;Purchased New
+Value=2;Purchased Used
+Value=3;Gift/Inheritance
+Value=4;Made/Built
+Value=8;Other
+
+[Item]
+Label=M08_Q06 Purchase Price
+Name=M08_Q06
+Start=45
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M08_Q07 Current Market Value
+Name=M08_Q07
+Start=53
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 9 - Education
+Name=M09
+RecordTypeValue='09'
+MaxRecords=20
+RecordLen=99
+
+[Item]
+Label=Member ID
+Name=MEMBER_ID_M09
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M09_Q01 Ever Attended School
+Name=M09_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Ever Attended School
+Name=M09_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M09_Q02 Currently Attending School
+Name=M09_Q02
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Currently Attending
+Name=M09_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M09_Q03 Highest Level Completed
+Name=M09_Q03
+Start=38
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Education Level
+Name=M09_Q03_VS1
+Value=1;None
+Value=2;ECD
+Value=3;Primary
+Value=4;Lower Secondary
+Value=5;Upper Secondary
+Value=6;Vocational
+Value=7;Diploma
+Value=8;Bachelor Degree
+Value=9;Postgraduate
+Value=98;Don't Know
+
+[Item]
+Label=M09_Q04 Highest Grade/Form Completed
+Name=M09_Q04
+Start=40
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M09_Q05 Current Level Attending
+Name=M09_Q05
+Start=42
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Current Level
+Name=M09_Q05_VS1
+Value=1;ECD
+Value=2;Primary
+Value=3;Lower Secondary
+Value=4;Upper Secondary
+Value=5;Vocational
+Value=6;Tertiary
+
+[Item]
+Label=M09_Q06 Current Grade/Form
+Name=M09_Q06
+Start=44
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M09_Q07 Type of School
+Name=M09_Q07
+Start=46
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=School Type
+Name=M09_Q07_VS1
+Value=1;Government Day
+Value=2;Government Boarding
+Value=3;Private Day
+Value=4;Private Boarding
+Value=5;Mission Day
+Value=6;Mission Boarding
+Value=7;Local Authority
+Value=8;Special Needs
+Value=9;Vocational/Technical
+Value=98;Other
+
+[Item]
+Label=M09_Q08 Distance to School
+Name=M09_Q08
+Start=48
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M09_Q09 Mode of Transport to School
+Name=M09_Q09
+Start=51
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Transport to School
+Name=M09_Q09_VS1
+Value=1;Walking
+Value=2;Bicycle
+Value=3;Public Transport
+Value=4;School Transport
+Value=5;Private Vehicle
+Value=98;Other
+
+[Item]
+Label=M09_Q10 School Fees (Annual)
+Name=M09_Q10
+Start=53
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M09_Q11 Other School Costs (Annual)
+Name=M09_Q11
+Start=61
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M09_Q12 Receives Education Support
+Name=M09_Q12
+Start=69
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Education Support
+Name=M09_Q12_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M09_Q13 Type of Education Support
+Name=M09_Q13
+Start=70
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=Support Type
+Name=M09_Q13_VS1
+Value='A    ';School Fees
+Value='B    ';Uniform
+Value='C    ';Stationery
+Value='D    ';Transport
+Value='E    ';Meals
+Value='F    ';Boarding
+
+[Item]
+Label=M09_Q14 Value of Support (Annual)
+Name=M09_Q14
+Start=75
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M09_Q15 Source of Support
+Name=M09_Q15
+Start=83
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Support Source
+Name=M09_Q15_VS1
+Value=1;Government
+Value=2;NGO
+Value=3;Religious Organization
+Value=4;Private Sponsor
+Value=5;Community
+Value=98;Other
+
+[Item]
+Label=M09_Q16 Reason for Not Attending School
+Name=M09_Q16
+Start=85
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Not Attending Reason
+Name=M09_Q16_VS1
+Value=1;Too Expensive
+Value=2;Too Far
+Value=3;Not Interested
+Value=4;Working
+Value=5;Caring for Others
+Value=6;Illness/Disability
+Value=7;Pregnancy/Marriage
+Value=8;Completed Education
+Value=9;Too Young
+Value=10;No School Available
+Value=98;Other
+
+[Item]
+Label=M09_Q17 Age Started School
+Name=M09_Q17
+Start=87
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M09_Q18 Age Left School
+Name=M09_Q18
+Start=89
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M09_Q19 Repeated Any Grade
+Name=M09_Q19
+Start=91
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Repeated Grade
+Name=M09_Q19_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M09_Q20 Number of Grades Repeated
+Name=M09_Q20
+Start=92
+Len=1
+DataType=Numeric
+
+[Item]
+Label=M09_Q21 Can Read and Write
+Name=M09_Q21
+Start=93
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Literacy
+Name=M09_Q21_VS1
+Value=1;Yes, Both
+Value=2;Read Only
+Value=3;Write Only
+Value=4;Neither
+
+[Item]
+Label=M09_Q22 Language of Instruction
+Name=M09_Q22
+Start=94
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Instruction Language
+Name=M09_Q22_VS1
+Value=1;English
+Value=2;Shona
+Value=3;Ndebele
+Value=4;Other Local Language
+Value=98;Other
+
+[Item]
+Label=M09_Q23 Satisfied with School Quality
+Name=M09_Q23
+Start=96
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=School Quality
+Name=M09_Q23_VS1
+Value=1;Very Satisfied
+Value=2;Satisfied
+Value=3;Neutral
+Value=4;Dissatisfied
+Value=5;Very Dissatisfied
+
+[Item]
+Label=M09_Q24 Plans to Continue Education
+Name=M09_Q24
+Start=97
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Continue Education
+Name=M09_Q24_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't Know
+
+[Item]
+Label=M09_Q25 Desired Level of Education
+Name=M09_Q25
+Start=98
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Desired Education
+Name=M09_Q25_VS1
+Value=1;Primary
+Value=2;Lower Secondary
+Value=3;Upper Secondary
+Value=4;Vocational
+Value=5;Diploma
+Value=6;Bachelor Degree
+Value=7;Postgraduate
+Value=98;Don't Know
+
+[Record]
+Label=Module 10 - Employment
+Name=M10
+RecordTypeValue='10'
+MaxRecords=20
+RecordLen=268
+
+[Item]
+Label=Member ID
+Name=MEMBER_ID_M10
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M10_Q01 Worked for Pay Last 7 Days
+Name=M10_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Worked Last 7 Days
+Name=M10_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q02 Had Job but Temporarily Absent
+Name=M10_Q02
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Temporarily Absent
+Name=M10_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q03 Looked for Work Last 4 Weeks
+Name=M10_Q03
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Looked for Work
+Name=M10_Q03_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q04 Available to Start Work
+Name=M10_Q04
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Available to Work
+Name=M10_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q05 Main Employment Status
+Name=M10_Q05
+Start=40
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Employment Status
+Name=M10_Q05_VS1
+Value=1;Paid Employee
+Value=2;Self-employed
+Value=3;Employer
+Value=4;Contributing Family Worker
+Value=5;Unemployed
+Value=6;Not in Labor Force
+
+[Item]
+Label=M10_Q06 Main Occupation Description
+Name=M10_Q06_DESC
+Start=41
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M10_Q06 Main Occupation ISCO Code
+Name=M10_Q06_ISCO
+Start=91
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M10_Q07 Industry Description
+Name=M10_Q07_DESC
+Start=95
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M10_Q07 Industry ISIC Code
+Name=M10_Q07_ISIC
+Start=145
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M10_Q08 Type of Employment Contract
+Name=M10_Q08
+Start=149
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Contract Type
+Name=M10_Q08_VS1
+Value=1;Permanent
+Value=2;Fixed-term
+Value=3;Casual/Temporary
+Value=4;Seasonal
+Value=5;No Contract
+
+[Item]
+Label=M10_Q09 Hours Worked Last Week
+Name=M10_Q09
+Start=150
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M10_Q10 Usual Hours Worked per Week
+Name=M10_Q10
+Start=152
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M10_Q11 Wants to Work More Hours
+Name=M10_Q11
+Start=154
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Want More Hours
+Name=M10_Q11_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q12 Additional Hours Available
+Name=M10_Q12
+Start=155
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M10_Q13 Workplace Location
+Name=M10_Q13
+Start=157
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Workplace Location
+Name=M10_Q13_VS1
+Value=1;At Home
+Value=2;Employer's Premises
+Value=3;Own Business Premises
+Value=4;Client's Premises
+Value=5;Street/Market
+Value=6;Farm/Field
+Value=7;Mobile/No Fixed Location
+Value=98;Other
+
+[Item]
+Label=M10_Q14 Distance to Work
+Name=M10_Q14
+Start=159
+Len=3
+DataType=Numeric
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=M10_Q15 Mode of Transport to Work
+Name=M10_Q15
+Start=162
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Transport to Work
+Name=M10_Q15_VS1
+Value=1;Walking
+Value=2;Bicycle
+Value=3;Motorcycle
+Value=4;Car
+Value=5;Public Transport
+Value=6;Company Transport
+Value=98;Other
+
+[Item]
+Label=M10_Q16 Monthly Earnings (Main Job)
+Name=M10_Q16
+Start=164
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M10_Q17 Earnings Include Benefits
+Name=M10_Q17
+Start=172
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=Benefits Included
+Name=M10_Q17_VS1
+Value='A    ';Medical Aid
+Value='B    ';Pension Fund
+Value='C    ';Housing Allowance
+Value='D    ';Transport Allowance
+Value='E    ';Meals
+Value='F    ';None
+
+[Item]
+Label=M10_Q18 Has Second Job
+Name=M10_Q18
+Start=177
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Has Second Job
+Name=M10_Q18_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q19 Second Job Occupation
+Name=M10_Q19_DESC
+Start=178
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M10_Q19 Second Job ISCO Code
+Name=M10_Q19_ISCO
+Start=228
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M10_Q20 Second Job Monthly Earnings
+Name=M10_Q20
+Start=232
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M10_Q21 Reason for Not Working
+Name=M10_Q21
+Start=240
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Not Working Reason
+Name=M10_Q21_VS1
+Value=1;Student
+Value=2;Homemaker
+Value=3;Retired
+Value=4;Disabled/Ill
+Value=5;No Jobs Available
+Value=6;Lack of Skills
+Value=7;Caring for Others
+Value=8;Too Young/Old
+Value=98;Other
+
+[Item]
+Label=M10_Q22 Ever Worked Before
+Name=M10_Q22
+Start=242
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Ever Worked
+Name=M10_Q22_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q23 When Last Worked
+Name=M10_Q23
+Start=243
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M10_Q24 Reason for Leaving Last Job
+Name=M10_Q24
+Start=247
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Left Job Reason
+Name=M10_Q24_VS1
+Value=1;Dismissed/Retrenched
+Value=2;Contract Ended
+Value=3;Business Closed
+Value=4;Better Job
+Value=5;Health Reasons
+Value=6;Family Reasons
+Value=7;Retirement
+Value=8;Study
+Value=98;Other
+
+[Item]
+Label=M10_Q25 Methods Used to Look for Work
+Name=M10_Q25
+Start=249
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=Job Search Methods
+Name=M10_Q25_VS1
+Value='A       ';Contacted Employers
+Value='B       ';Employment Agency
+Value='C       ';Newspaper Ads
+Value='D       ';Internet
+Value='E       ';Friends/Relatives
+Value='F       ';Government Office
+Value='G       ';Started Own Business
+Value='H       ';Waited at Workplace
+
+[Item]
+Label=M10_Q26 Duration of Job Search
+Name=M10_Q26
+Start=257
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M10_Q27 Willing to Relocate for Work
+Name=M10_Q27
+Start=259
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Willing to Relocate
+Name=M10_Q27_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M10_Q28 Minimum Acceptable Wage
+Name=M10_Q28
+Start=260
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M10_Q29 Skills Training Received
+Name=M10_Q29
+Start=268
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Skills Training
+Name=M10_Q29_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Module 11 - Health
+Name=M11
+RecordTypeValue='11'
+MaxRecords=20
+RecordLen=69
+
+[Item]
+Label=Member ID
+Name=MEMBER_ID_M11
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M11_Q01 General Health Status
+Name=M11_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Health Status
+Name=M11_Q01_VS1
+Value=1;Very Good
+Value=2;Good
+Value=3;Fair
+Value=4;Poor
+Value=5;Very Poor
+
+[Item]
+Label=M11_Q02 Chronic Illness or Condition
+Name=M11_Q02
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Chronic Condition
+Name=M11_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M11_Q03 Type of Chronic Condition
+Name=M11_Q03
+Start=38
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=Condition Type
+Name=M11_Q03_VS1
+Value='A       ';Diabetes
+Value='B       ';High Blood Pressure
+Value='C       ';Heart Disease
+Value='D       ';Cancer
+Value='E       ';Asthma
+Value='F       ';Arthritis
+Value='G       ';HIV/AIDS
+Value='H       ';Tuberculosis
+Value='I       ';Mental Health
+Value='J       ';Epilepsy
+
+[Item]
+Label=M11_Q04 Illness/Injury Last 4 Weeks
+Name=M11_Q04
+Start=46
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Recent Illness
+Name=M11_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M11_Q05 Days Unable to Perform Activities
+Name=M11_Q05
+Start=47
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M11_Q06 Sought Medical Care
+Name=M11_Q06
+Start=49
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Sought Care
+Name=M11_Q06_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M11_Q07 Type of Health Facility
+Name=M11_Q07
+Start=50
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Health Facility
+Name=M11_Q07_VS1
+Value=1;Government Hospital
+Value=2;Government Clinic
+Value=3;Private Hospital
+Value=4;Private Clinic
+Value=5;Traditional Healer
+Value=6;Pharmacy
+Value=7;Mission Hospital
+Value=8;Mission Clinic
+Value=98;Other
+
+[Item]
+Label=M11_Q08 Reason for Not Seeking Care
+Name=M11_Q08
+Start=52
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=No Care Reason
+Name=M11_Q08_VS1
+Value=1;Too Expensive
+Value=2;Too Far
+Value=3;Not Serious
+Value=4;No Time
+Value=5;Poor Quality
+Value=6;No Transport
+Value=7;Self-medicated
+Value=98;Other
+
+[Item]
+Label=M11_Q09 Health Expenditure Last 4 Weeks
+Name=M11_Q09
+Start=54
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M11_Q10 Has Medical Insurance
+Name=M11_Q10
+Start=62
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Medical Insurance
+Name=M11_Q10_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M11_Q11 Type of Medical Insurance
+Name=M11_Q11
+Start=63
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Insurance Type
+Name=M11_Q11_VS1
+Value=1;Government Scheme
+Value=2;Employer Scheme
+Value=3;Private Insurance
+Value=4;Community Scheme
+Value=98;Other
+
+[Item]
+Label=M11_Q12 Satisfied with Health Services
+Name=M11_Q12
+Start=65
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Health Service Satisfaction
+Name=M11_Q12_VS1
+Value=1;Very Satisfied
+Value=2;Satisfied
+Value=3;Neutral
+Value=4;Dissatisfied
+Value=5;Very Dissatisfied
+
+[Item]
+Label=M11_Q13 Immunization Status (Children)
+Name=M11_Q13
+Start=66
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Immunization
+Name=M11_Q13_VS1
+Value=1;Fully Immunized
+Value=2;Partially Immunized
+Value=3;Not Immunized
+Value=9;Don't Know
+
+[Item]
+Label=M11_Q14 Birth Attended by Skilled Personnel
+Name=M11_Q14
+Start=67
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Skilled Birth Attendance
+Name=M11_Q14_VS1
+Value=1;Yes
+Value=2;No
+Value=9;Don't Know
+
+[Item]
+Label=M11_Q15 Nutritional Status Assessment
+Name=M11_Q15
+Start=68
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Nutritional Status
+Name=M11_Q15_VS1
+Value=1;Well Nourished
+Value=2;Moderately Malnourished
+Value=3;Severely Malnourished
+Value=9;Don't Know
+
+[Item]
+Label=M11_Q16 Mental Health Status
+Name=M11_Q16
+Start=69
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Mental Health
+Name=M11_Q16_VS1
+Value=1;Very Good
+Value=2;Good
+Value=3;Fair
+Value=4;Poor
+Value=5;Very Poor
+
+[Record]
+Label=Module 12 - Functioning
+Name=M12
+RecordTypeValue='12'
+MaxRecords=20
+RecordLen=48
+
+[Item]
+Label=Member ID
+Name=MEMBER_ID_M12
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M12_Q01 Difficulty Seeing
+Name=M12_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Difficulty Level
+Name=M12_Q01_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulty
+Value=3;A Lot of Difficulty
+Value=4;Cannot Do at All
+
+[Item]
+Label=M12_Q02 Difficulty Hearing
+Name=M12_Q02
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Hearing Difficulty
+Name=M12_Q02_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulty
+Value=3;A Lot of Difficulty
+Value=4;Cannot Do at All
+
+[Item]
+Label=M12_Q03 Difficulty Walking
+Name=M12_Q03
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Walking Difficulty
+Name=M12_Q03_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulty
+Value=3;A Lot of Difficulty
+Value=4;Cannot Do at All
+
+[Item]
+Label=M12_Q04 Difficulty Remembering
+Name=M12_Q04
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Memory Difficulty
+Name=M12_Q04_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulty
+Value=3;A Lot of Difficulty
+Value=4;Cannot Do at All
+
+[Item]
+Label=M12_Q05 Difficulty Self-Care
+Name=M12_Q05
+Start=40
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Self-Care Difficulty
+Name=M12_Q05_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulty
+Value=3;A Lot of Difficulty
+Value=4;Cannot Do at All
+
+[Item]
+Label=M12_Q06 Difficulty Communicating
+Name=M12_Q06
+Start=41
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Communication Difficulty
+Name=M12_Q06_VS1
+Value=1;No Difficulty
+Value=2;Some Difficulty
+Value=3;A Lot of Difficulty
+Value=4;Cannot Do at All
+
+[Item]
+Label=M12_Q07 Uses Assistive Device
+Name=M12_Q07
+Start=42
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Assistive Device
+Name=M12_Q07_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M12_Q08 Type of Assistive Device
+Name=M12_Q08
+Start=43
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=Device Type
+Name=M12_Q08_VS1
+Value='A    ';Glasses/Contact Lenses
+Value='B    ';Hearing Aid
+Value='C    ';Walking Stick/Cane
+Value='D    ';Wheelchair
+Value='E    ';Prosthetic Limb
+Value='F    ';Other
+
+[Item]
+Label=M12_Q09 Needs Help with Daily Activities
+Name=M12_Q09
+Start=48
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Needs Help
+Name=M12_Q09_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Module 13 - Labor Income
+Name=M13
+RecordTypeValue='13'
+MaxRecords=20
+RecordLen=172
+
+[Item]
+Label=Member ID
+Name=MEMBER_ID_M13
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M13_Q01 Received Wages Last Month
+Name=M13_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Received Wages
+Name=M13_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M13_Q02 Gross Wages Last Month
+Name=M13_Q02
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q03 Net Wages Last Month
+Name=M13_Q03
+Start=45
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q04 Overtime Pay Last Month
+Name=M13_Q04
+Start=53
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q05 Bonus/Commission Last Month
+Name=M13_Q05
+Start=61
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q06 Benefits Value Last Month
+Name=M13_Q06
+Start=69
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q07 Self-Employment Income Last Month
+Name=M13_Q07
+Start=77
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q08 Business Expenses Last Month
+Name=M13_Q08
+Start=85
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q09 Net Self-Employment Income
+Name=M13_Q09
+Start=93
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q10 Casual Work Income Last Month
+Name=M13_Q10
+Start=101
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q11 Agricultural Income Last Month
+Name=M13_Q11
+Start=109
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q12 Rental Income Last Month
+Name=M13_Q12
+Start=117
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q13 Investment Income Last Month
+Name=M13_Q13
+Start=125
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q14 Pension Income Last Month
+Name=M13_Q14
+Start=133
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q15 Social Grant Income Last Month
+Name=M13_Q15
+Start=141
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q16 Remittances Received Last Month
+Name=M13_Q16
+Start=149
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q17 Other Income Last Month
+Name=M13_Q17
+Start=157
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M13_Q18 Total Income Last Month
+Name=M13_Q18
+Start=165
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 21 - FAFH HH Level
+Name=M21
+RecordTypeValue='21'
+MaxRecords=9
+RecordLen=46
+
+[Item]
+Label=Food Item ID
+Name=FOOD_ITEM_ID_M21
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=FAFH Food Items
+Name=FOOD_ITEM_ID_M21_VS1
+Value=1;Breakfast at Restaurant
+Value=2;Lunch at Restaurant
+Value=3;Dinner at Restaurant
+Value=4;Snacks/Fast Food
+Value=5;Drinks/Beverages
+Value=6;Street Food
+Value=7;Takeaway Meals
+Value=8;Catered Events
+Value=9;School Meals
+
+[Item]
+Label=M21_Q01 Consumed Last 7 Days
+Name=M21_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Consumed FAFH
+Name=M21_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M21_Q02 Number of Times Last 7 Days
+Name=M21_Q02
+Start=37
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M21_Q03 Total Expenditure Last 7 Days
+Name=M21_Q03
+Start=39
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 22 Flap - Home Food Categories (65 Categories)
+Name=M22_FLAP
+RecordTypeValue='22'
+MaxRecords=65
+RecordLen=36
+
+[Item]
+Label=m22_group
+Name=M22_GROUP
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=m22_group
+Name=M22_GROUP_VS1
+Value=1;Cereals e.g. white rice
+Value=2;Flours of cereals  e.g mealie meal
+Value=3;Bread and Bakery products e.g white loaves
+Value=4;Breakfast cereals e.g Cornfalkes
+Value=5;Macaroni, noodles, couscous and similar pasta products
+Value=6;Other cereal and grain mill products (such as doughs, popcorn granola bars, etc.)
+Value=7;Live land animals e.g goat, chicken
+Value=8;Meat fresh, chilled or frozen e.g. pork, beef
+Value=9;Meat dried, salted, in brine or smoked
+Value=10;Offal, blood and other parts of slaughtered animals fresh, chilled or frozen, dried, salted, in brine or smoked (ND)
+Value=11;Meat, offal, blood and other parts of slaughtered animals' preparations
+Value=12;Fish, live, fresh, chilled or frozen
+Value=13;Fish, dried, salted, in brine or smoked
+Value=14;Fish preparations e.g canned tuna
+Value=15;Other seafood live, fresh, chilled or frozen (ND)
+Value=16;Other seafood, dried, salted, in brine or smoked
+Value=17;Other seafood preparations (prepared foodstuffs made of other seafood as defined in 01.1.3.4)
+Value=18;Raw and whole milk   e.g fresh or sour milk
+Value=19;Skimmed milk  e.g. milk without fat
+Value=20;Other milk and cream  e.g powdered milk
+Value=21;Non-animal milk  e.g. soy milk
+Value=22;Cheese  e.g cheda cheese
+Value=23;Yoghurt and similar products
+Value=24;Milk-based dessert and beverages e.g pudding
+Value=25;Eggs  e.g. chicken eggs
+Value=26;Vegetable oils  e.g cooking oil
+Value=27;Butter and other fats and oils derived from milk
+Value=28;Margarine and similar preparations  e.g stock margarine
+Value=29;Other animal oils and fats
+Value=30;Tropical fruit, fresh e.g Bananas
+Value=31;Citrus fruits, fresh e.g oranges
+Value=32;Stone fruits and pome fruits, fresh e.g Apples
+Value=33;Berries, fresh e.g strawberries
+Value=34;Grapes, kiwi, melons, watermelons, pomegranates and other fruits, fresh
+Value=35;Frozen fruit
+Value=36;Fruit dried and dehydrated e.g raisins
+Value=37;Nuts, in shell or shelled (ND) e.g. groundnuts
+Value=38;Fruit and nuts ground and other preparations e.g. canned fruit
+Value=39;Leafy or stem vegetables, fresh or chilled, such as cauliflowers, lettuce, spinach and other leafy or stem vegetables
+Value=40;Fruit-bearing vegetables, fresh or chilled, such as chillies and peppers, cucumbers and gherkins, eggplants, tomatoes and pumpkins
+Value=41;Green leguminous vegetables, fresh or chilled, such as beans, peas, broad beans and horse beans and soya beans
+Value=42;Other vegetables, tubers, such as carrots and turnips, garlic, onions, leeks, mushrooms, olives
+Value=43;All types of potatoes including sweet potatoes, other tubers, plantains and cooking bananas
+Value=44;Pulses (dried leguminous vegetables)
+Value=45;Other vegetables, tubers, plantains and cooking bananas dried and dehydrated (ND)
+Value=46;Vegetables, tubers, plantains and cooking bananas frozen (ND)
+Value=47;Vegetables, tubers, plantains, cooking bananas and pulses preparations, whether frozen or not
+Value=48;Cane and beet sugar e.g brown sugar
+Value=49;Other sugar and sugar substitutes, such as saccharin and other artificial sweeteners, glucose, fructose and the likes
+Value=50;Jams, fruit jellies, marmalades, fruit puree and pastes, honey
+Value=51;Nut purée, nut butter and nut pastes e.g peanut butter
+Value=52;Chocolate, cocoa and cocoa based food products
+Value=53;Ice, ice cream and sorbet
+Value=54;Vegetables, fruit, nuts, peserved by sugar, chewing gum, toffees, lollies, candies, pastilles
+Value=55;Ready-made food (prepared food and meals that can be eaten as is or after heating but that do not require cooking) e.g. pizza
+Value=56;Baby food (ND) baby formulas
+Value=57;Salt, condiments and sauces e.g. baking power, vinegar
+Value=58;Spices, culinary herbs and seeds
+Value=59;Fruit and vegetable juices  mango fruit juice
+Value=60;Coffee and coffee substitutes e,g instant coffee
+Value=61;Tea, mate and other plant products for infusion e.g. hebal tea, rooibos tea
+Value=62;Cocoa drinks e.g milo
+Value=63;Water e.g. mineral water, sparking water
+Value=64;Soft drinks, such as sodas, lemonades and colas and sparkling juices
+Value=65;Other non-alcoholic beverages, such as flavoured water, energy drinks, syrups and concentrates for the preparation of beverages and the likes e.g maheu, mazoe
+
+[Item]
+Label=m22_flap_yn
+Name=M22_FLAP_YN
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=m22_flap_yn
+Name=M22_FLAP_YN_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Module 22 - Home Food Purchases/Gifts/Transfers
+Name=M22
+RecordTypeValue='2A'
+MaxRecords=293
+RecordLen=79
+
+[Item]
+Label=Food Item ID
+Name=FOOD_ITEM_ID_M22
+Start=34
+Len=3
+DataType=Numeric
+
+[ValueSet]
+Label=Food Item ID
+Name=FOOD_ITEM_ID_M22_VS1
+Value=1;Wheat
+Value=2;White Rice
+Value=3;Brown  Rice
+Value=4;Sorghum/Mapfunde/Amabele grain
+Value=5;Maize grain
+Value=6;Quinoa seed
+Value=7;Mhunga/Inyawuthi grain
+Value=8;Rapoko/Rukweza/Uphoko grain
+Value=9;Maize Samp
+Value=10;Barley
+Value=11;Other cereals, specify_________
+Value=12;Wheat flour/hupfu
+Value=13;Rice flour
+Value=14;Sorghum flour/Hupfu
+Value=15;Maize meal – Super refined
+Value=16;Maize meal – Roller meal
+Value=17;Maize meal – Straight run
+Value=18;Mhunga Hupfu/flour
+Value=19;Rapoko Hupfu/flour
+Value=20;Malt/chimera/imthombo
+Value=21;Other flours of cereals, specify________________
+Value=22;White bread (loaves)
+Value=23;Brown bread (loaves)
+Value=24;Tea loaf
+Value=25;Cake
+Value=26;Bun
+Value=27;Scone
+Value=28;Crisp bread, rusks, toasted bread, crackers
+Value=29;Biscuits-loose
+Value=30;Biscuits- creams
+Value=31;Biscuits-Cookies
+Value=32;Pies
+Value=33;Sweet biscuits (cookies, waffles and wafers)
+Value=34;Muffins and croissants
+Value=35;Other bread and bakery products, specify___________
+Value=36;Wheat cereals(e.g cerevita)
+Value=37;Cornflakes
+Value=38;Branflakes
+Value=39;Cocopops
+Value=40;Weetbix
+Value=41;Oats and instant poridge
+Value=42;Other breakfast cereals(Specify)
+Value=43;Macaroni
+Value=44;Spaghetti
+Value=45;Noodles
+Value=46;Pasta uncooked, whether stuffed or not, and couscous
+Value=47;Uncooked dumplings, ravioli and similar
+Value=48;Other Macaroni, noodles, couscous and similar pasta products (Specify)
+Value=49;Mixes and doughs for the preparation of bakery products;
+Value=50;Popcorn
+Value=51;Granola bar
+Value=52;Chips and crisps of cereals
+Value=53;Broken maize/mealie rice
+Value=54; Other cereal and grain mill products  (Specify)
+Value=55;Cattle and all other Bovine animal, live
+Value=56;Pigs, live
+Value=57;Goats,live
+Value=58;Sheep/Lamb,live
+Value=59;Chicken, live
+Value=60;Turkey,live
+Value=61;Duck,live
+Value=62;Hares and rabbits, live
+Value=63;Other live land animals, specify______________
+Value=64;Meat of cattle and all other bovine animals
+Value=65;Pork
+Value=66;Chicken
+Value=67;Guinea fowl meat
+Value=68;Game meat
+Value=69;Goat meat
+Value=70;Mutton (Meat of Sheep)
+Value=71;Meat of turkeys
+Value=72;Meat of ducks
+Value=73;Meat of hares and rabbits
+Value=74;Crocodile meat
+Value=75;Other meat, fresh, chilled or frozen
+Value=76;Meat of cattle and of buffaloes salted, dried or smoked.
+Value=77;Meat of pigs, cuts, salted, dried or smoked
+Value=78;Macimbi/Madora
+Value=79;Smoked Sausage
+Value=80;Ishwa
+Value=81;Bacon
+Value=82;Other meat, dried, salted or smoked, specify_______________
+Value=83;Bones
+Value=84;Pork heads
+Value=85;Casings (Matumbu)
+Value=86;Rough tripe
+Value=87;Liver
+Value=88;Kidney
+Value=89;Ox Heart
+Value=90;Ox Tail
+Value=91;Gizzards
+Value=92;Chicken necks
+Value=93;Chicken feet
+Value=94;Mazondo
+Value=95;Others Offal, blood and other parts of slaughtered animals fresh, chilled or frozen, dried, salted, in brine or smoked  (Specify)
+Value=96;Sausages all types
+Value=97;Mince meat
+Value=98;Marinated beef/chicken
+Value=99;Canned meat
+Value=100;Other meat, offal or blood preparations, specify__________
+Value=101;Fresh/frozen bream
+Value=102;Fresh/frozen mackerel
+Value=103;Tiger Fish -fresh
+Value=104;Cat Fish -fresh
+Value=105;Salmons and trouts, live, fresh, chilled or frozen.
+Value=106;Soles, turbots, cods, hakes and tunas live, fresh, chilled or frozen
+Value=107;Herrings, sardines, sardinella, brisling or sprats, mackerels and swordfish, live, fresh, chilled or frozen.
+Value=108;Other fish, live, fresh, chilled, or frozen, specify______________
+Value=109;Bream
+Value=110;Mackerel
+Value=111;Tiger Fish -dry
+Value=112;Cat Fish-dry
+Value=113;Smoked salmons and trouts
+Value=114;Cods, hakes dried, salted or in brine.
+Value=115;Canned Fish
+Value=116;Kapenta/matemba (small dried fish)
+Value=117;Other fish, dried, salted, in brine, smoked, specify_____________
+Value=118;Preparations of tunas (canned tuna)
+Value=119;Preparations of herrings, sardines, sardinella, mackerels and swordfish
+Value=120;Other fish, prepared or preserved, specify________________
+Value=121;Shrimps and prawns, live, fresh, chilled, or frozen
+Value=122;Crabs, lobsters and other crustaceans, live, fresh, chilled or frozen
+Value=123;Oysters, scallops, mussels, clams, cockles and arkshells, live, fresh, chilled or frozen.
+Value=124;Cuttlefish, squid and octopus, live, fresh, chilled or frozen.
+Value=125;Other molluscs, aquatic invertebrates, live, fresh, chilled, or frozen, specify________________
+Value=126;Seafood, dried, salted, in brine or smoked
+Value=127;Other seafood, dried, salted, in brine or smoked(Specify)
+Value=128;Seafood preparations (prepared foodstuffs made of other seafood as defined in 01.1.3.4)
+Value=129;Other seafood preparations (Specify)
+Value=130;Fresh raw and whole milk of cattle
+Value=131;Sour raw and whole milk of cattle
+Value=132;Other raw and whole milk, specify_______________
+Value=133;Milk without fat
+Value=134;Milk with low fat
+Value=135;Other Skimmed milk
+Value=136;Condensed or evaporated milk
+Value=137;Powdered milk
+Value=138;Cream
+Value=139;Other milk and cream specify
+Value=140;Soy milk
+Value=141;Other non animal milk, sepcify__________
+Value=142;Cream cheese
+Value=143;Chedder cheese
+Value=144;Soft cheese(
+Value=145;Hard cheese
+Value=146;Dairy cheese
+Value=147;Other cheese (Specify)
+Value=148;Yoghurt
+Value=149;Buttermilk-Amasi
+Value=150;Pfuko (with milk)
+Value=151;Coconut yoghurt
+Value=152;Other yoghurt and similar products(Specify)
+Value=153;Pudding
+Value=154;Instant ice cream
+Value=155;Butter milk
+Value=156;Dairy fruit mix
+Value=157;Other milk-based dessert and beverages (Specify)
+Value=158;Chicken eggs (units)
+Value=159;Turkey eggs
+Value=160;Ducks eggs
+Value=161;Eggs of other animals, in shell, fresh
+Value=162;Other egg products, specify_____________
+Value=163;Cooking oil
+Value=164;Palm oil
+Value=165;Olive oil
+Value=166;Other vegetable oil, specify_____________
+Value=167;Unsalted Butter
+Value=168;Salted Butter
+Value=169;Other fats and oils derived from milk, specify_____________
+Value=170;Margarine and similar preparations (ND)
+Value=171;Stock
+Value=172;Others margarine and similar preparations  (Specify)
+Value=173;Pig fat and lard,
+Value=174;Fat from cattle, buffaloes, sheep, goats, poultry
+Value=175;Edible fats and oils of fish
+Value=176;Other animal oils and fats
+Value=177;Avocados, fresh
+Value=178;Bananas , fresh
+Value=179;Mangoes, guavas and mangosteens, fresh
+Value=180;Guavas and mangosteens, fresh
+Value=181;Pineapples, fresh
+Value=182;Other tropical fruits, specify_________
+Value=183;Grapefruit fresh
+Value=184;Lemons and lime, fresh
+Value=185;Oranges, fresh
+Value=186;Other citrus fruits, fresh, specify___________
+Value=187;apples, fresh
+Value=188;pears, fresh
+Value=189;apricots, fresh
+Value=190;cherries, fresh
+Value=191;peaches, fresh
+Value=192;plums, fresh
+Value=193;Other stone fruits and pome fruits, fresh, specify____________
+Value=194;Strawberries, fresh
+Value=195;Blueberries
+Value=196;Raspberries
+Value=197;Cranberries
+Value=198;Mulberries
+Value=199;Other berries, fresh, specify
+Value=200;Grapes, fresh
+Value=201;Kiwi fruit, fresh
+Value=202;Melons, fresh
+Value=203;Watermelons, fresh
+Value=204;Other fruits, fresh, specify___________
+Value=205;Frozen fruit
+Value=206;Other frozen fruit
+Value=207;Dried raisins
+Value=208;Dried dates
+Value=209;Other fruit dried and dehydrated (Specify)
+Value=210;Groundnuts (shelled)
+Value=211;Groundnuts (unshelled)
+Value=212;Nyimo/indlubu/roundnuts (shelled)
+Value=213;Nyimo/indlubu/roundnuts (unshelled)
+Value=214;Macadenia nuts
+Value=215;Others nuts, in shell or shelled (Specify)
+Value=216;Fruit and nuts flour
+Value=217;Canned fruit
+Value=218;Other fruit and nuts preparations, specify
+Value=219;Cabbages, fresh or chilled
+Value=220;Cauliflowers, fresh or chilled
+Value=221;Lettuce, fresh or chilled
+Value=222;Spinach, fresh or chilled
+Value=223;Pumpkin leaves (bundle)
+Value=224;Rape/Covo/Chomoulier (bundle)
+Value=225;Other leafy or stem vegetables, fresh or chilled, specify___________________
+Value=226;Chillies, fresh or chilled
+Value=227;Peppers, fresh or chilled
+Value=228;Cucumbers fresh or chilled
+Value=229;Eggplants, fresh or chilled
+Value=230;Tomatoes, fresh or chilled
+Value=231;Pumpkins and butter nuts, fresh or chilled
+Value=232;Okra, fresh or chilled
+Value=233;Other fruit-bearing vegetables, fresh or chilled, specify______________
+Value=234;Beans, fresh or chilled
+Value=235;Green beans, fresh or chilled
+Value=236;Peas, fresh or chilled
+Value=237;Broad beans and horse beans, fresh or chilled
+Value=238;Soya beans, fresh or chilled
+Value=239;Other green leguminous vegetables, fresh or chilled
+Value=240;Carrots and turnips, fresh or chilled
+Value=241;Garlic, fresh or chilled
+Value=242;Onions and shallots, fresh or chilled
+Value=243;Mushrooms and truffles, fresh or chilled
+Value=244;Olives, fresh or chilled
+Value=245;Other vegetable, mixtures of vegetables, fresh or chilled, specify_________________
+Value=246;Potatoes
+Value=247;Sweet potatoes
+Value=248;Plantains and cooking bananas
+Value=249;Other tubers, specify______________
+Value=250;Beans, dried
+Value=251;Broad beans and horse beans, dried
+Value=252;Chick peas, dried
+Value=253;Lentils, dried
+Value=254;Peas, dried
+Value=255;Other pulses, specify____________
+Value=256;Dried soyabeans
+Value=257;Dried Potatoes
+Value=258;Other vegetables, tubers, plantains and cooking bananas dried and dehydrated
+Value=259;Frozen Vegetables
+Value=260;Frozen  tubers
+Value=261;Frozen plantains
+Value=262;Other frozen Vegetables, tubers, plantains and cooking bananas frozen(Specify)
+Value=263;Mushroom
+Value=264;Green mealies
+Value=265;Madhumbe/yams
+Value=266;Canned vegetables
+Value=267;Preserved olives
+Value=268;Chipped potatoes, frozen
+Value=269;Other vegetables, pulses and tubers preserved or processed, specify_________________
+Value=270;Sugar cane (Nzimbe)
+Value=271;White Sugar
+Value=272;Brown sugar
+Value=273;Beet sugar
+Value=274;Others cane and beet sugar(specify)
+Value=275;fructose
+Value=276;Icing Sugar
+Value=277;Castar Sugar
+Value=278;Glucose
+Value=279;saccharin
+Value=280;Sweeteners
+Value=281;Other sugar and sugar substitutes, such as saccharin and other artificial sweeteners, glucose, fructose and the likes(Specify)
+Value=282;Honey
+Value=283;Jams
+Value=284;Fruit jellies
+Value=285;Marmalades
+Value=286;Fruit puree and pastes
+Value=287;Syrup
+Value=288;Other Jams, fruit jellies, marmalades, fruit puree and pastes, honey (Specify)
+Value=289;Peanut butter
+Value=290;Almond butter
+Value=291;Macademia nut butter
+Value=292;other Nut purée, nut butter and nut pastes
+Value=293;Chocolate, including white chocolate
+Value=294;Cocoa beans
+Value=295;Cocoa powder
+Value=296;Other cocoa-based foods and cocoa-based dessert preparations, specify____________
+Value=297;Ice cream
+Value=298; Sorbet
+Value=299;Other ice cream and sorbet (Specify)
+Value=300;Chewing gum
+Value=301;Sweets
+Value=302;Toffees
+Value=303;Candies
+Value=304;Other vegetables, fruit, nuts, peserved by sugar, chewing gum, toffees, lollies, candies, pastilles
+Value=305;Chicken and Chips(from chicken Inn/Chiken Slice etc outlets)
+Value=306;Chips (from chicken Inn/Chiken Slice etc outlets)
+Value=307;Pizza
+Value=308;Fish (from Fish Inn or other outlets)
+Value=309;Other Ready-made food (prepared food and meals that can be eaten as is or after heating but that do not require cooking)
+Value=310;Baby formula (powdered, condensed and evaporated milk for baby use)
+Value=311;Baby wheat cereals and flours for baby meals
+Value=312;Homogenized baby food
+Value=313;Other baby food, specify_________________
+Value=314;Salt
+Value=315;Baking powder
+Value=316;Mixed condiments e.g Royco
+Value=317;Sauces
+Value=318;Vinegar
+Value=319;Yeast
+Value=320;Soda
+Value=321;Custard ponder
+Value=322;Others Salt,condiments and sauces (Specify)
+Value=323;Spices
+Value=324;culinary herbs
+Value=325;Other spices, culinary herbs and seeds (Specify)
+Value=326;Mango fruit drink.
+Value=327;Apple fruit drink
+Value=328;Orange fruit drink
+Value=329;Gauva fruit drink
+Value=330;Grape fruit drink
+Value=331;Mixed fruit drink
+Value=332;Other fruit and vegetable juices (Specify)
+Value=333;Coffee Creamer( Cremora)
+Value=334;Jacobs coffee
+Value=335;Instant Coffee
+Value=336;Others (Specify)
+Value=337;Herbal tea
+Value=338;Stella Tea
+Value=339;Three leaves
+Value=340;Tanganda Tea
+Value=341;Rooibos tea
+Value=342;Instant Tea
+Value=343;Other Tea, mate and other plant products for infusion(Specify)
+Value=344;Milo
+Value=345;Chocolate
+Value=346;Milk Chocolate
+Value=347;Other chocolate drinks (Specify)
+Value=348;Mineral water
+Value=349;Sparkling Water
+Value=350;Other water (Specify)
+Value=351;Soft drinks
+Value=352;Sparkling juices
+Value=353;Other Soft drinks, such as sodas, lemonades and colas and sparkling juices (Specify)
+Value=354; Super cools/freezits
+Value=355; Maheu
+Value=356;mazoe drinks
+Value=357;energy drink
+Value=358;Other non-alcoholic beverages, such as flavoured water, energy drinks, syrups and concentrates for the preparation of beverages and the likes(Specify)
+
+[Item]
+Label=M22_Q01 Purchased/Received Last 7 Days
+Name=M22_Q01
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Purchased/Received
+Name=M22_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M22_Q02 Quantity Purchased/Received
+Name=M22_Q02
+Start=38
+Len=6
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=M22_Q03 Unit of Measurement
+Name=M22_Q03
+Start=44
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Unit of Measurement
+Name=M22_Q03_VS1
+Value=1;Kilogram
+Value=2;Gram
+Value=3;Litre
+Value=4;Millilitre
+Value=5;Piece
+Value=6;Packet
+Value=7;Bottle
+Value=8;Can
+Value=9;Bag
+Value=10;Box
+Value=11;Loaf
+Value=12;Bunch
+Value=13;Dozen
+Value=98;Other
+
+[Item]
+Label=M22_Q04 Total Value (ZWL)
+Name=M22_Q04
+Start=46
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M22_Q05 Amount Purchased
+Name=M22_Q05
+Start=54
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M22_Q06 Amount Received as Gift
+Name=M22_Q06
+Start=62
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M22_Q07 Amount from Own Production
+Name=M22_Q07
+Start=70
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M22_Q08 Source of Purchase
+Name=M22_Q08
+Start=78
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Purchase Source
+Name=M22_Q08_VS1
+Value=1;Supermarket
+Value=2;Local Shop
+Value=3;Market/Vendor
+Value=4;Street Vendor
+Value=5;Wholesale
+Value=6;Direct from Producer
+Value=7;Online
+Value=98;Other
+
+[Record]
+Label=Module 22B - Home Food Consumption
+Name=M22B
+RecordTypeValue='2B'
+MaxRecords=293
+RecordLen=52
+
+[Item]
+Label=Food Item ID
+Name=FOOD_ITEM_ID_M22B
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Food Item Categories
+Name=FOOD_ITEM_ID_M22B_VS1
+Value=1;Rice
+Value=2;Wheat and Wheat Products
+Value=3;Maize and Maize Products
+Value=4;Other Cereals
+Value=5;Bread and Bakery Products
+Value=6;Pasta Products
+Value=7;Other Cereal Products
+Value=8;Fresh or Chilled Beef
+Value=9;Fresh or Chilled Pork
+Value=10;Fresh or Chilled Lamb, Mutton and Goat
+Value=11;Fresh or Chilled Poultry
+Value=12;Frozen Meat
+Value=13;Dried, Salted or Smoked Meat
+Value=14;Other Meat Preparations
+Value=15;Fresh or Chilled Fish
+Value=16;Frozen Fish
+Value=17;Dried, Smoked or Salted Fish
+Value=18;Other Seafood
+Value=19;Fresh Milk
+Value=20;Preserved Milk and Milk Products
+Value=21;Cheese
+Value=22;Eggs
+Value=23;Butter
+Value=24;Margarine and Other Vegetable Fats
+Value=25;Olive Oil
+Value=26;Other Edible Oils
+Value=27;Fresh or Chilled Fruit
+Value=28;Frozen Fruit
+Value=29;Dried Fruit and Nuts
+Value=30;Preserved Fruit and Fruit-based Products
+Value=31;Fresh or Chilled Vegetables other than Potatoes
+Value=32;Fresh or Chilled Potatoes
+Value=33;Frozen Vegetables
+Value=34;Dried Vegetables
+Value=35;Preserved or Processed Vegetables
+Value=36;Sugar
+Value=37;Jams, Marmalades and Honey
+Value=38;Chocolate
+Value=39;Confectionery Products
+Value=40;Edible Ice and Ice Cream
+Value=41;Salt, Spices and Culinary Herbs
+Value=42;Sauces, Condiments and Seasonings
+Value=43;Baby Food
+Value=44;Other Food Products
+Value=45;Coffee
+Value=46;Tea
+Value=47;Cocoa and Powdered Chocolate
+Value=48;Mineral or Spring Waters
+Value=49;Soft Drinks
+Value=50;Fruit and Vegetable Juices
+Value=51;Legumes and Pulses
+Value=52;Groundnuts and Other Nuts
+Value=53;Seeds and Kernels
+Value=54;Breakfast Cereals
+Value=55;Biscuits and Cakes
+Value=56;Pastry and Other Cereal-based Preparations
+Value=57;Offal
+Value=58;Delicatessen and Other Meat Preparations
+Value=59;Canned or Bottled Fish and Seafood
+Value=60;Other Milk Products
+Value=61;Other Animal Fats
+Value=62;Artificial Sugar Substitutes
+Value=63;Other Sugar and Confectionery Products
+Value=64;Food Products Not Elsewhere Classified
+Value=65;Other Non-Alcoholic Beverages
+
+[Item]
+Label=M22B_Q01 Consumed Last 7 Days
+Name=M22B_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Consumed
+Name=M22B_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M22B_Q02 Quantity Consumed
+Name=M22B_Q02
+Start=37
+Len=6
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=M22B_Q03 Unit of Measurement
+Name=M22B_Q03
+Start=43
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Unit of Measurement
+Name=M22B_Q03_VS1
+Value=1;Kilogram
+Value=2;Gram
+Value=3;Litre
+Value=4;Millilitre
+Value=5;Piece
+Value=6;Packet
+Value=7;Bottle
+Value=8;Can
+Value=9;Bag
+Value=10;Box
+Value=11;Loaf
+Value=12;Bunch
+Value=13;Dozen
+Value=98;Other
+
+[Item]
+Label=M22B_Q04 Estimated Value of Consumption
+Name=M22B_Q04
+Start=45
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 23 Flap - Alcohol and Beverages
+Name=M23_FLAP
+RecordTypeValue='23'
+RecordLen=38
+
+[Item]
+Label=M23_FLAP_Q01 Beer
+Name=M23_FLAP_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Beer Category
+Name=M23_FLAP_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M23_FLAP_Q02 Wine
+Name=M23_FLAP_Q02
+Start=35
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Wine Category
+Name=M23_FLAP_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M23_FLAP_Q03 Spirits and Liqueurs
+Name=M23_FLAP_Q03
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Spirits Category
+Name=M23_FLAP_Q03_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M23_FLAP_Q04 Traditional Alcoholic Beverages
+Name=M23_FLAP_Q04
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Traditional Alcohol Category
+Name=M23_FLAP_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M23_FLAP_Q05 Other Non-Alcoholic Beverages
+Name=M23_FLAP_Q05
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Other Beverages Category
+Name=M23_FLAP_Q05_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Module 23 - Alcohol and Beverage Purchases/Gifts/Transfers
+Name=M23
+RecordTypeValue='3A'
+MaxRecords=30
+RecordLen=78
+
+[Item]
+Label=Beverage Item ID
+Name=BEVERAGE_ITEM_ID_M23
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Beverage Categories
+Name=BEVERAGE_ITEM_ID_M23_VS1
+Value=1;Beer
+Value=2;Wine
+Value=3;Spirits and Liqueurs
+Value=4;Traditional Alcoholic Beverages
+Value=5;Other Non-Alcoholic Beverages
+
+[Item]
+Label=M23_Q01 Purchased/Received Last 7 Days
+Name=M23_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Purchased/Received
+Name=M23_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M23_Q02 Quantity Purchased/Received
+Name=M23_Q02
+Start=37
+Len=6
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=M23_Q03 Unit of Measurement
+Name=M23_Q03
+Start=43
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Unit of Measurement
+Name=M23_Q03_VS1
+Value=1;Litre
+Value=2;Millilitre
+Value=3;Bottle
+Value=4;Can
+Value=5;Glass
+Value=6;Crate
+Value=98;Other
+
+[Item]
+Label=M23_Q04 Total Value (ZWL)
+Name=M23_Q04
+Start=45
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M23_Q05 Amount Purchased
+Name=M23_Q05
+Start=53
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M23_Q06 Amount Received as Gift
+Name=M23_Q06
+Start=61
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M23_Q07 Amount from Own Production
+Name=M23_Q07
+Start=69
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M23_Q08 Source of Purchase
+Name=M23_Q08
+Start=77
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Purchase Source
+Name=M23_Q08_VS1
+Value=1;Bottle Store
+Value=2;Supermarket
+Value=3;Bar/Pub
+Value=4;Restaurant
+Value=5;Street Vendor
+Value=6;Traditional Brewer
+Value=98;Other
+
+[Record]
+Label=Module 23B - Alcohol and Beverage Consumption
+Name=M23B
+RecordTypeValue='3B'
+MaxRecords=30
+RecordLen=52
+
+[Item]
+Label=Beverage Item ID
+Name=BEVERAGE_ITEM_ID_M23B
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Beverage Categories
+Name=BEVERAGE_ITEM_ID_M23B_VS1
+Value=1;Beer
+Value=2;Wine
+Value=3;Spirits and Liqueurs
+Value=4;Traditional Alcoholic Beverages
+Value=5;Other Non-Alcoholic Beverages
+
+[Item]
+Label=M23B_Q01 Consumed Last 7 Days
+Name=M23B_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Consumed
+Name=M23B_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M23B_Q02 Quantity Consumed
+Name=M23B_Q02
+Start=37
+Len=6
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=M23B_Q03 Unit of Measurement
+Name=M23B_Q03
+Start=43
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Unit of Measurement
+Name=M23B_Q03_VS1
+Value=1;Litre
+Value=2;Millilitre
+Value=3;Bottle
+Value=4;Can
+Value=5;Glass
+Value=6;Crate
+Value=98;Other
+
+[Item]
+Label=M23B_Q04 Estimated Value of Consumption
+Name=M23B_Q04
+Start=45
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 24 Flap - Commodities and Services
+Name=M24_FLAP
+RecordTypeValue='24'
+RecordLen=39
+
+[Item]
+Label=M24_FLAP_Q01 Personal Care Products
+Name=M24_FLAP_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Personal Care Category
+Name=M24_FLAP_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M24_FLAP_Q02 Household Cleaning Products
+Name=M24_FLAP_Q02
+Start=35
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Cleaning Products Category
+Name=M24_FLAP_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M24_FLAP_Q03 Tobacco Products
+Name=M24_FLAP_Q03
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Tobacco Category
+Name=M24_FLAP_Q03_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M24_FLAP_Q04 Fuel and Energy
+Name=M24_FLAP_Q04
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Fuel Category
+Name=M24_FLAP_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M24_FLAP_Q05 Transport Services
+Name=M24_FLAP_Q05
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Transport Category
+Name=M24_FLAP_Q05_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M24_FLAP_Q06 Communication Services
+Name=M24_FLAP_Q06
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Communication Category
+Name=M24_FLAP_Q06_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Module 24 - Commodities and Non-Food Services
+Name=M24
+RecordTypeValue='4A'
+MaxRecords=53
+RecordLen=54
+
+[Item]
+Label=Commodity Item ID
+Name=COMMODITY_ITEM_ID_M24
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Commodity Categories
+Name=COMMODITY_ITEM_ID_M24_VS1
+Value=1;Personal Care Products
+Value=2;Household Cleaning Products
+Value=3;Tobacco Products
+Value=4;Fuel and Energy
+Value=5;Transport Services
+Value=6;Communication Services
+
+[Item]
+Label=M24_Q01 Purchased Last 30 Days
+Name=M24_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Purchased
+Name=M24_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M24_Q02 Quantity Purchased
+Name=M24_Q02
+Start=37
+Len=6
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=M24_Q03 Unit of Measurement
+Name=M24_Q03
+Start=43
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Unit of Measurement
+Name=M24_Q03_VS1
+Value=1;Kilogram
+Value=2;Litre
+Value=3;Piece
+Value=4;Packet
+Value=5;Service
+Value=98;Other
+
+[Item]
+Label=M24_Q04 Total Expenditure (ZWL)
+Name=M24_Q04
+Start=45
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M24_Q05 Source of Purchase
+Name=M24_Q05
+Start=53
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Purchase Source
+Name=M24_Q05_VS1
+Value=1;Supermarket
+Value=2;Local Shop
+Value=3;Market/Vendor
+Value=4;Service Provider
+Value=5;Online
+Value=98;Other
+
+[Record]
+Label=Module 25 Flap - Clothing and Textiles
+Name=M25_FLAP
+RecordTypeValue='25'
+RecordLen=38
+
+[Item]
+Label=M25_FLAP_Q01 Men's Clothing
+Name=M25_FLAP_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Men's Clothing Category
+Name=M25_FLAP_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M25_FLAP_Q02 Women's Clothing
+Name=M25_FLAP_Q02
+Start=35
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Women's Clothing Category
+Name=M25_FLAP_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M25_FLAP_Q03 Children's Clothing
+Name=M25_FLAP_Q03
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Children's Clothing Category
+Name=M25_FLAP_Q03_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M25_FLAP_Q04 Footwear
+Name=M25_FLAP_Q04
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Footwear Category
+Name=M25_FLAP_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M25_FLAP_Q05 Textiles and Fabrics
+Name=M25_FLAP_Q05
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Textiles Category
+Name=M25_FLAP_Q05_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Module 25 - Clothing and Textiles
+Name=M25
+RecordTypeValue='5A'
+MaxRecords=38
+RecordLen=48
+
+[Item]
+Label=Clothing Item ID
+Name=CLOTHING_ITEM_ID_M25
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Clothing Categories
+Name=CLOTHING_ITEM_ID_M25_VS1
+Value=1;Men's Clothing
+Value=2;Women's Clothing
+Value=3;Children's Clothing
+Value=4;Footwear
+Value=5;Textiles and Fabrics
+
+[Item]
+Label=M25_Q01 Purchased Last 12 Months
+Name=M25_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Purchased
+Name=M25_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M25_Q02 Number of Items
+Name=M25_Q02
+Start=37
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M25_Q03 Total Expenditure (ZWL)
+Name=M25_Q03
+Start=39
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M25_Q04 Source of Purchase
+Name=M25_Q04
+Start=47
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Purchase Source
+Name=M25_Q04_VS1
+Value=1;Clothing Store
+Value=2;Market/Vendor
+Value=3;Supermarket
+Value=4;Online
+Value=5;Tailor/Seamstress
+Value=98;Other
+
+[Record]
+Label=Module 26 Flap - Furnishings and Equipment
+Name=M26_FLAP
+RecordTypeValue='26'
+RecordLen=38
+
+[Item]
+Label=M26_FLAP_Q01 Furniture
+Name=M26_FLAP_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Furniture Category
+Name=M26_FLAP_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M26_FLAP_Q02 Household Appliances
+Name=M26_FLAP_Q02
+Start=35
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Appliances Category
+Name=M26_FLAP_Q02_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M26_FLAP_Q03 Household Utensils
+Name=M26_FLAP_Q03
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Utensils Category
+Name=M26_FLAP_Q03_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M26_FLAP_Q04 Tools and Equipment
+Name=M26_FLAP_Q04
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Tools Category
+Name=M26_FLAP_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M26_FLAP_Q05 Recreational Equipment
+Name=M26_FLAP_Q05
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Recreation Category
+Name=M26_FLAP_Q05_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Module 26 - Furnishings and Equipment
+Name=M26
+RecordTypeValue='6A'
+MaxRecords=52
+RecordLen=48
+
+[Item]
+Label=Equipment Item ID
+Name=EQUIPMENT_ITEM_ID_M26
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Equipment Categories
+Name=EQUIPMENT_ITEM_ID_M26_VS1
+Value=1;Furniture
+Value=2;Household Appliances
+Value=3;Household Utensils
+Value=4;Tools and Equipment
+Value=5;Recreational Equipment
+
+[Item]
+Label=M26_Q01 Purchased Last 12 Months
+Name=M26_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Purchased
+Name=M26_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M26_Q02 Number of Items
+Name=M26_Q02
+Start=37
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M26_Q03 Total Expenditure (ZWL)
+Name=M26_Q03
+Start=39
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M26_Q04 Source of Purchase
+Name=M26_Q04
+Start=47
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Purchase Source
+Name=M26_Q04_VS1
+Value=1;Furniture Store
+Value=2;Hardware Store
+Value=3;Supermarket
+Value=4;Market/Vendor
+Value=5;Online
+Value=98;Other
+
+[Record]
+Label=Module 14 - Non-Labor Income
+Name=M14
+RecordTypeValue='14'
+RecordLen=121
+
+[Item]
+Label=M14_Q01 Rental Income Last 12 Months
+Name=M14_Q01
+Start=34
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q02 Investment Income Last 12 Months
+Name=M14_Q02
+Start=42
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q03 Business Profits Last 12 Months
+Name=M14_Q03
+Start=50
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q04 Pension Income Last 12 Months
+Name=M14_Q04
+Start=58
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q05 Social Grants Last 12 Months
+Name=M14_Q05
+Start=66
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q06 Remittances Received Last 12 Months
+Name=M14_Q06
+Start=74
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q07 Insurance Payouts Last 12 Months
+Name=M14_Q07
+Start=82
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q08 Sale of Assets Last 12 Months
+Name=M14_Q08
+Start=90
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q09 Loans Received Last 12 Months
+Name=M14_Q09
+Start=98
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q10 Other Income Last 12 Months
+Name=M14_Q10
+Start=106
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M14_Q11 Total Non-Labor Income
+Name=M14_Q11
+Start=114
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 15 - Expenditure on Services
+Name=M15
+RecordTypeValue='15'
+MaxRecords=25
+RecordLen=47
+
+[Item]
+Label=Service ID
+Name=SERVICE_ID_M15
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Service Types
+Name=SERVICE_ID_M15_VS1
+Value=1;Health Services
+Value=2;Education Services
+Value=3;Transport Services
+Value=4;Communication Services
+Value=5;Financial Services
+Value=6;Legal Services
+Value=7;Recreation Services
+Value=8;Personal Services
+Value=9;Household Services
+Value=10;Insurance Services
+
+[Item]
+Label=M15_Q01 Used Service Last 12 Months
+Name=M15_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Used Service
+Name=M15_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M15_Q02 Frequency of Use
+Name=M15_Q02
+Start=37
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M15_Q03 Total Expenditure Last 12 Months
+Name=M15_Q03
+Start=39
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M15_Q04 Satisfaction with Service
+Name=M15_Q04
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Service Satisfaction
+Name=M15_Q04_VS1
+Value=1;Very Satisfied
+Value=2;Satisfied
+Value=3;Neutral
+Value=4;Dissatisfied
+Value=5;Very Dissatisfied
+
+[Record]
+Label=Module 16 - Agriculture and Livestock
+Name=M16
+RecordTypeValue='16'
+RecordLen=100
+
+[Item]
+Label=M16_Q01 Engaged in Agriculture
+Name=M16_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Engaged in Agriculture
+Name=M16_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M16_Q02 Total Land Area (Hectares)
+Name=M16_Q02
+Start=35
+Len=6
+DataType=Numeric
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=M16_Q03 Land Ownership Status
+Name=M16_Q03
+Start=41
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Land Ownership
+Name=M16_Q03_VS1
+Value=1;Owned
+Value=2;Rented
+Value=3;Communal
+Value=4;Borrowed
+Value=98;Other
+
+[Item]
+Label=M16_Q04 Main Crops Grown
+Name=M16_Q04
+Start=43
+Len=10
+DataType=Alpha
+
+[Item]
+Label=M16_Q05 Crop Production Value Last Season
+Name=M16_Q05
+Start=53
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M16_Q06 Livestock Owned
+Name=M16_Q06
+Start=61
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Own Livestock
+Name=M16_Q06_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M16_Q07 Number of Cattle
+Name=M16_Q07
+Start=62
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M16_Q08 Number of Goats
+Name=M16_Q08
+Start=65
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M16_Q09 Number of Sheep
+Name=M16_Q09
+Start=68
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M16_Q10 Number of Pigs
+Name=M16_Q10
+Start=71
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M16_Q11 Number of Chickens
+Name=M16_Q11
+Start=74
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M16_Q12 Livestock Income Last 12 Months
+Name=M16_Q12
+Start=77
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M16_Q13 Agricultural Expenses Last 12 Months
+Name=M16_Q13
+Start=85
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M16_Q14 Net Agricultural Income
+Name=M16_Q14
+Start=93
+Len=8
+DataType=Numeric
+
+[Record]
+Label=Module 17 - Transfers and Gifts
+Name=M17
+RecordTypeValue='17'
+MaxRecords=20
+RecordLen=126
+
+[Item]
+Label=Transfer ID
+Name=TRANSFER_ID_M17
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M17_Q01 Type of Transfer
+Name=M17_Q01
+Start=36
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Transfer Type
+Name=M17_Q01_VS1
+Value=1;Cash Gift Received
+Value=2;Cash Gift Given
+Value=3;In-kind Gift Received
+Value=4;In-kind Gift Given
+Value=5;Loan Received
+Value=6;Loan Given
+Value=7;Remittance Received
+Value=8;Remittance Sent
+
+[Item]
+Label=M17_Q02 Source/Recipient
+Name=M17_Q02
+Start=38
+Len=50
+DataType=Alpha
+
+[Item]
+Label=M17_Q03 Amount/Value (ZWL)
+Name=M17_Q03
+Start=88
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M17_Q04 Frequency
+Name=M17_Q04
+Start=96
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Transfer Frequency
+Name=M17_Q04_VS1
+Value=1;One-time
+Value=2;Monthly
+Value=3;Quarterly
+Value=4;Annually
+Value=5;Irregular
+
+[Item]
+Label=M17_Q05 Purpose
+Name=M17_Q05
+Start=97
+Len=30
+DataType=Alpha
+
+[Record]
+Label=Module 18 - Savings and Credit
+Name=M18
+RecordTypeValue='18'
+RecordLen=62
+
+[Item]
+Label=M18_Q01 Has Savings Account
+Name=M18_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Has Savings
+Name=M18_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M18_Q02 Type of Savings Institution
+Name=M18_Q02
+Start=35
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Savings Institution
+Name=M18_Q02_VS1
+Value=1;Commercial Bank
+Value=2;Building Society
+Value=3;Microfinance
+Value=4;Savings Club
+Value=5;Mobile Money
+Value=98;Other
+
+[Item]
+Label=M18_Q03 Current Savings Balance
+Name=M18_Q03
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M18_Q04 Has Outstanding Loans
+Name=M18_Q04
+Start=45
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Has Loans
+Name=M18_Q04_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M18_Q05 Total Outstanding Debt
+Name=M18_Q05
+Start=46
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M18_Q06 Monthly Debt Payments
+Name=M18_Q06
+Start=54
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M18_Q07 Access to Credit
+Name=M18_Q07
+Start=62
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Credit Access
+Name=M18_Q07_VS1
+Value=1;Very Easy
+Value=2;Easy
+Value=3;Difficult
+Value=4;Very Difficult
+Value=5;No Access
+
+[Record]
+Label=Module 19 - Shocks and Coping Strategies
+Name=M19
+RecordTypeValue='19'
+MaxRecords=10
+RecordLen=56
+
+[Item]
+Label=Shock ID
+Name=SHOCK_ID_M19
+Start=34
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M19_Q01 Type of Shock
+Name=M19_Q01
+Start=36
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Shock Type
+Name=M19_Q01_VS1
+Value=1;Drought
+Value=2;Floods
+Value=3;Crop Disease
+Value=4;Livestock Disease
+Value=5;Job Loss
+Value=6;Illness/Death
+Value=7;Crime/Theft
+Value=8;Economic Crisis
+Value=9;COVID-19 Impact
+Value=98;Other
+
+[Item]
+Label=M19_Q02 When Occurred
+Name=M19_Q02
+Start=38
+Len=4
+DataType=Numeric
+
+[Item]
+Label=M19_Q03 Severity of Impact
+Name=M19_Q03
+Start=42
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Impact Severity
+Name=M19_Q03_VS1
+Value=1;Very Severe
+Value=2;Severe
+Value=3;Moderate
+Value=4;Mild
+Value=5;No Impact
+
+[Item]
+Label=M19_Q04 Financial Loss (ZWL)
+Name=M19_Q04
+Start=43
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M19_Q05 Coping Strategy Used
+Name=M19_Q05
+Start=51
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=Coping Strategy
+Name=M19_Q05_VS1
+Value='A    ';Used Savings
+Value='B    ';Borrowed Money
+Value='C    ';Sold Assets
+Value='D    ';Reduced Consumption
+Value='E    ';Sought Help from Family
+Value='F    ';Government Assistance
+Value='G    ';NGO Assistance
+Value='H    ';No Action Taken
+
+[Item]
+Label=M19_Q06 Recovery Status
+Name=M19_Q06
+Start=56
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Recovery Status
+Name=M19_Q06_VS1
+Value=1;Fully Recovered
+Value=2;Partially Recovered
+Value=3;Not Recovered
+Value=4;Worse than Before
+
+[Record]
+Label=Module 20 - Food Security
+Name=M20
+RecordTypeValue='20'
+RecordLen=45
+
+[Item]
+Label=M20_Q01 Worried About Food
+Name=M20_Q01
+Start=34
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Food Worry
+Name=M20_Q01_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q02 Unable to Eat Healthy Food
+Name=M20_Q02
+Start=35
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Healthy Food Access
+Name=M20_Q02_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q03 Ate Few Kinds of Food
+Name=M20_Q03
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Food Variety
+Name=M20_Q03_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q04 Skipped Meals
+Name=M20_Q04
+Start=37
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Skipped Meals
+Name=M20_Q04_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q05 Ate Less Than Needed
+Name=M20_Q05
+Start=38
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Ate Less
+Name=M20_Q05_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q06 Ran Out of Food
+Name=M20_Q06
+Start=39
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Ran Out of Food
+Name=M20_Q06_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q07 Went Hungry
+Name=M20_Q07
+Start=40
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Went Hungry
+Name=M20_Q07_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q08 Went Whole Day Without Eating
+Name=M20_Q08
+Start=41
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Day Without Food
+Name=M20_Q08_VS1
+Value=1;Never
+Value=2;Rarely
+Value=3;Sometimes
+Value=4;Often
+Value=5;Always
+
+[Item]
+Label=M20_Q09 Food Security Score
+Name=M20_Q09
+Start=42
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M20_Q10 Main Source of Food
+Name=M20_Q10
+Start=44
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Food Source
+Name=M20_Q10_VS1
+Value=1;Own Production
+Value=2;Purchase
+Value=3;Gifts/Transfers
+Value=4;Food Aid
+Value=5;Gathering/Hunting
+Value=98;Other
+
+[Record]
+Label=Module 27 - Health Expenditure
+Name=M27
+RecordTypeValue='27'
+MaxRecords=20
+RecordLen=48
+
+[Item]
+Label=Health Item ID
+Name=HEALTH_ITEM_ID_M27
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Health Expenditure Types
+Name=HEALTH_ITEM_ID_M27_VS1
+Value=1;Consultation Fees
+Value=2;Medicines
+Value=3;Medical Tests
+Value=4;Hospital Fees
+Value=5;Traditional Medicine
+Value=6;Medical Insurance
+Value=7;Transport to Health Facility
+Value=8;Medical Equipment
+
+[Item]
+Label=M27_Q01 Spent on Health Last 30 Days
+Name=M27_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Health Spending
+Name=M27_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M27_Q02 Amount Spent (ZWL)
+Name=M27_Q02
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M27_Q03 For Which Household Member
+Name=M27_Q03
+Start=45
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M27_Q04 Type of Health Facility
+Name=M27_Q04
+Start=47
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Health Facility Type
+Name=M27_Q04_VS1
+Value=1;Government Hospital
+Value=2;Government Clinic
+Value=3;Private Hospital
+Value=4;Private Clinic
+Value=5;Traditional Healer
+Value=6;Pharmacy
+Value=98;Other
+
+[Record]
+Label=Module 28 - Education Expenditure
+Name=M28
+RecordTypeValue='28'
+MaxRecords=20
+RecordLen=48
+
+[Item]
+Label=Education Item ID
+Name=EDUCATION_ITEM_ID_M28
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Education Expenditure Types
+Name=EDUCATION_ITEM_ID_M28_VS1
+Value=1;School Fees
+Value=2;Uniforms
+Value=3;Books and Stationery
+Value=4;Transport to School
+Value=5;Meals at School
+Value=6;Extra Lessons
+Value=7;School Equipment
+Value=8;Boarding Fees
+
+[Item]
+Label=M28_Q01 Spent on Education Last 12 Months
+Name=M28_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Education Spending
+Name=M28_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M28_Q02 Amount Spent (ZWL)
+Name=M28_Q02
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M28_Q03 For Which Household Member
+Name=M28_Q03
+Start=45
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M28_Q04 Level of Education
+Name=M28_Q04
+Start=47
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Education Level
+Name=M28_Q04_VS1
+Value=1;ECD
+Value=2;Primary
+Value=3;Lower Secondary
+Value=4;Upper Secondary
+Value=5;Vocational
+Value=6;Tertiary
+
+[Record]
+Label=Module 29 - Transport Expenditure
+Name=M29
+RecordTypeValue='29'
+MaxRecords=15
+RecordLen=48
+
+[Item]
+Label=Transport Item ID
+Name=TRANSPORT_ITEM_ID_M29
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Transport Types
+Name=TRANSPORT_ITEM_ID_M29_VS1
+Value=1;Public Transport
+Value=2;Taxi/Uber
+Value=3;Fuel for Own Vehicle
+Value=4;Vehicle Maintenance
+Value=5;Vehicle Insurance
+Value=6;Parking Fees
+Value=7;Bicycle Maintenance
+
+[Item]
+Label=M29_Q01 Spent on Transport Last 30 Days
+Name=M29_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Transport Spending
+Name=M29_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M29_Q02 Amount Spent (ZWL)
+Name=M29_Q02
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M29_Q03 Frequency of Use
+Name=M29_Q03
+Start=45
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M29_Q04 Main Purpose
+Name=M29_Q04
+Start=47
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Transport Purpose
+Name=M29_Q04_VS1
+Value=1;Work
+Value=2;School
+Value=3;Health
+Value=4;Shopping
+Value=5;Social
+Value=98;Other
+
+[Record]
+Label=Module 30 - Communication Expenditure
+Name=M30
+RecordTypeValue='30'
+MaxRecords=10
+RecordLen=64
+
+[Item]
+Label=Communication Item ID
+Name=COMMUNICATION_ITEM_ID_M30
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Communication Types
+Name=COMMUNICATION_ITEM_ID_M30_VS1
+Value=1;Mobile Phone Airtime
+Value=2;Mobile Data
+Value=3;Internet Services
+Value=4;Fixed Line Phone
+Value=5;Postal Services
+
+[Item]
+Label=M30_Q01 Spent on Communication Last 30 Days
+Name=M30_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Communication Spending
+Name=M30_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M30_Q02 Amount Spent (ZWL)
+Name=M30_Q02
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M30_Q03 Service Provider
+Name=M30_Q03
+Start=45
+Len=20
+DataType=Alpha
+
+[Record]
+Label=Module 31 - Recreation and Culture Expenditure
+Name=M31
+RecordTypeValue='31'
+MaxRecords=15
+RecordLen=47
+
+[Item]
+Label=Recreation Item ID
+Name=RECREATION_ITEM_ID_M31
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Recreation Types
+Name=RECREATION_ITEM_ID_M31_VS1
+Value=1;Sports Activities
+Value=2;Entertainment Events
+Value=3;Books and Magazines
+Value=4;Music and Movies
+Value=5;Games and Toys
+Value=6;Cultural Events
+Value=7;Tourism and Travel
+
+[Item]
+Label=M31_Q01 Spent on Recreation Last 12 Months
+Name=M31_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Recreation Spending
+Name=M31_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M31_Q02 Amount Spent (ZWL)
+Name=M31_Q02
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M31_Q03 Frequency
+Name=M31_Q03
+Start=45
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M31_Q04 Satisfaction Level
+Name=M31_Q04
+Start=47
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Recreation Satisfaction
+Name=M31_Q04_VS1
+Value=1;Very Satisfied
+Value=2;Satisfied
+Value=3;Neutral
+Value=4;Dissatisfied
+Value=5;Very Dissatisfied
+
+[Record]
+Label=Module 32 - Miscellaneous Expenditure
+Name=M32
+RecordTypeValue='32'
+MaxRecords=20
+RecordLen=96
+
+[Item]
+Label=Miscellaneous Item ID
+Name=MISC_ITEM_ID_M32
+Start=34
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Miscellaneous Types
+Name=MISC_ITEM_ID_M32_VS1
+Value=1;Religious Donations
+Value=2;Gifts and Ceremonies
+Value=3;Legal Services
+Value=4;Financial Services
+Value=5;Personal Care Services
+Value=6;Household Services
+Value=7;Other Services
+
+[Item]
+Label=M32_Q01 Spent Last 12 Months
+Name=M32_Q01
+Start=36
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Miscellaneous Spending
+Name=M32_Q01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=M32_Q02 Amount Spent (ZWL)
+Name=M32_Q02
+Start=37
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M32_Q03 Frequency
+Name=M32_Q03
+Start=45
+Len=2
+DataType=Numeric
+
+[Item]
+Label=M32_Q04 Description
+Name=M32_Q04
+Start=47
+Len=50
+DataType=Alpha
+
+[Record]
+Label=Module 33 - End of Interview
+Name=M33
+RecordTypeValue='33'
+RecordLen=257
+
+[Item]
+Label=M33_Q01 Interview End Date
+Name=M33_Q01
+Start=34
+Len=8
+DataType=Numeric
+
+[Item]
+Label=M33_Q02 Interview End Time
+Name=M33_Q02
+Start=42
+Len=6
+DataType=Numeric
+
+[Item]
+Label=M33_Q03 Total Interview Duration (Minutes)
+Name=M33_Q03
+Start=48
+Len=3
+DataType=Numeric
+
+[Item]
+Label=M33_Q04 Interview Quality Assessment
+Name=M33_Q04
+Start=51
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Interview Quality
+Name=M33_Q04_VS1
+Value=1;Excellent
+Value=2;Good
+Value=3;Fair
+Value=4;Poor
+Value=5;Very Poor
+
+[Item]
+Label=M33_Q05 Respondent Cooperation
+Name=M33_Q05
+Start=52
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Respondent Cooperation
+Name=M33_Q05_VS1
+Value=1;Very Cooperative
+Value=2;Cooperative
+Value=3;Somewhat Cooperative
+Value=4;Uncooperative
+Value=5;Very Uncooperative
+
+[Item]
+Label=M33_Q06 Data Quality Assessment
+Name=M33_Q06
+Start=53
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Data Quality
+Name=M33_Q06_VS1
+Value=1;Very Good
+Value=2;Good
+Value=3;Fair
+Value=4;Poor
+Value=5;Very Poor
+
+[Item]
+Label=M33_Q07 Interview Completion Status
+Name=M33_Q07
+Start=54
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Completion Status
+Name=M33_Q07_VS1
+Value=1;Complete
+Value=2;Partially Complete
+Value=3;Incomplete - Refusal
+Value=4;Incomplete - Not Available
+Value=5;Incomplete - Other
+
+[Item]
+Label=M33_Q08 Number of Visits Required
+Name=M33_Q08
+Start=55
+Len=1
+DataType=Numeric
+
+[Item]
+Label=M33_Q09 Interviewer Comments
+Name=M33_Q09
+Start=56
+Len=200
+DataType=Alpha
+
+[Item]
+Label=M33_Q10 Supervisor Review Status
+Name=M33_Q10
+Start=256
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Review Status
+Name=M33_Q10_VS1
+Value=1;Approved
+Value=2;Needs Revision
+Value=3;Rejected
+Value=4;Pending Review
+
+[Item]
+Label=M33_Q11 Final Interview Status
+Name=M33_Q11
+Start=257
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Final Status
+Name=M33_Q11_VS1
+Value=1;Complete and Approved
+Value=2;Complete with Issues
+Value=3;Incomplete
+Value=4;Rejected
